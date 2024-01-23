@@ -1,0 +1,77 @@
+html *, * {
+    text-decoration: none;
+    color: $black;
+    @include fontRaleway(24, 400);
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+.section {
+    position: relative;
+    scroll-snap-align: end;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.particles-js {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    filter: blur(30px);
+}
+
+header {
+    height: 48px;
+    margin-top: 16px;
+    border-top: solid 1px $black;
+    overflow: hidden;
+    nav, ul {
+        height: 100%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            width: 250px;
+            font-size: 20px;
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+        }
+        a::before {
+            position: absolute;
+            display: block;
+            content: "";
+            background: $black;
+            width: 250px;
+            height: 100%;
+            left: 50%;
+            top: -100%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: $radius1;
+            border-bottom-right-radius: $radius1;
+            z-index: -1;
+            transition-duration: .2s;
+            transition-timing-function: ease-in;
+        }
+        a:hover::before {
+            top: 0;
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+        }
+        a:hover {
+            color: $white; // todo: couleur inverse de celle du fond
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+        }
+    }
+}
+

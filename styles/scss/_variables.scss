@@ -1,0 +1,34 @@
+//---------------Variables----------------
+
+// Colors
+$black: #101010;
+$white: #F6F6F6;
+$blue: #74E1FF;
+
+// Pixels
+$nav-height: 48px;
+$header-height: 64px;
+$radius1: 25px;
+
+
+//-----------------Fonts------------------
+@font-face {
+    font-family: 'Raleway';
+    src: url('/static/fonts/raleway/Raleway-VariableFont_wght.ttf');
+}
+@mixin fontRaleway($size: 16, $weight: normal) {
+    font-family: 'Raleway';
+    font-size: $size + px;
+    font-weight: $weight;
+}
+
+
+//--------------Placeholders--------------
+%transition-start {
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+%transition-end {
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}

@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/static/fonts/raleway/Raleway-VariableFont_wght.ttf");
+}
+#contacts .contact:hover::after, #contacts .contact:hover, #contacts .contact:hover span, section#presentation .links a:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#contacts .contact::after, #contacts .contact, section#presentation .links a {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+html *, * {
+  text-decoration: none;
+  color: #101010;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  position: relative;
+  scroll-snap-align: end;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.particles-js {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  filter: blur(30px);
+}
+
+header {
+  height: 48px;
+  margin-top: 16px;
+  border-top: solid 1px #101010;
+  overflow: hidden;
+}
+header nav, header ul {
+  height: 100%;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 250px;
+  font-size: 20px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+header ul a::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #101010;
+  width: 250px;
+  height: 100%;
+  left: 50%;
+  top: -100%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: -1;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+header ul a:hover::before {
+  top: 0;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+header ul a:hover {
+  color: #F6F6F6;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+section#hero {
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-top: 32px;
+  height: calc(100vh - 64px);
+  box-sizing: border-box;
+}
+section#hero div.contents {
+  display: flex;
+  flex-grow: 1;
+}
+section#hero div.contents img {
+  height: 1px;
+}
+section#hero div.contents div {
+  width: 100%;
+  margin-left: 128px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+section#hero div.contents h1 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+section#hero #scrollCall {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  height: 138px;
+}
+section#hero #scrollCall img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+section#hero #scrollCall #imgScrollCall {
+  animation: scrollCall 10s linear infinite;
+}
+
+@keyframes scrollCall {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+section#presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+section#presentation p {
+  margin-top: 32px;
+  width: 768px;
+  text-align: center;
+  line-height: 35px;
+}
+section#presentation .links {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+section#presentation .links a {
+  border: solid 1px #101010;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+section#presentation .links a:hover {
+  background: #101010;
+  color: #F6F6F6;
+}
+
+#contacts {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 10rem;
+}
+#contacts .contact-behance {
+  border-top: solid 1px #101010;
+}
+#contacts .contact {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  border-bottom: solid 1px #101010;
+  font-size: 32px;
+  font-weight: 600;
+}
+#contacts .contact span {
+  margin-left: 2rem;
+  margin-right: 4rem;
+  font-size: 96px;
+  font-weight: 100;
+}
+#contacts .contact::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+#contacts .contact:hover, #contacts .contact:hover span {
+  color: #F6F6F6;
+}
+#contacts .contact:hover::after {
+  transform: translateX(0%);
+}
+
+footer {
+  height: 4rem;
+  border-top: solid 1px #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+section#projects, section#photos {
+  padding-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+section#projects div, section#photos div {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 32px;
+}
+section#projects div:nth-child(odd), section#photos div:nth-child(odd) {
+  flex-direction: row;
+}
+section#projects div.project * *, section#photos div.project * * {
+  z-index: 2;
+}
+section#projects div.project, section#photos div.project {
+  position: relative;
+  background: #F6F6F6;
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  overflow: hidden;
+}
+section#projects div.project div:first-child, section#photos div.project div:first-child {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  margin-left: 32px;
+  margin-bottom: 24px;
+}
+section#projects div.project div:first-child p, section#photos div.project div:first-child p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #101010;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+section#projects div.project div:first-child p span, section#photos div.project div:first-child p span {
+  font-size: 20px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+section#projects div.project div:first-child .domains, section#photos div.project div:first-child .domains {
+  gap: 16px;
+}
+section#projects div.project div:first-child .domains a, section#photos div.project div:first-child .domains a {
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #F6F6F6;
+  background: #101010;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 300;
+  border: solid 1px #101010;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+section#projects div.project:first-child, section#photos div.project:first-child {
+  height: 336px;
+  flex-grow: 1;
+}
+section#projects div.project:last-child, section#photos div.project:last-child {
+  height: 336px;
+  flex-grow: 1.5;
+}
+section#projects div.project::after, section#photos div.project::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #101010;
+  width: 100%;
+  height: 135px;
+  bottom: 0;
+  z-index: 1;
+  transform: translateY(100%);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+section#projects div.project:hover::after, section#photos div.project:hover::after {
+  transform: translateY(0%);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+section#projects div.project:hover div:first-child p, section#photos div.project:hover div:first-child p {
+  color: #F6F6F6;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+section#projects div.project:hover div:first-child p span, section#photos div.project:hover div:first-child p span {
+  color: #F6F6F6;
+}
+section#projects div.project:hover div:first-child .domains a, section#photos div.project:hover div:first-child .domains a {
+  border: solid 1px #F6F6F6;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+section#projects h2, section#photos h2 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
