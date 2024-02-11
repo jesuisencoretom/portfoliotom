@@ -1,0 +1,31 @@
+html, html *, * * {
+    @include font_raleway;
+    scroll-behavior: smooth;
+}
+
+
+section {
+    margin: 0 10vw 0 10vw;
+}
+@media screen and (max-width: $breakpoint-tablet) {
+    section {
+        margin: 0 5vw 0 5vw;
+    }
+}
+
+
+h2 {
+    @include font_raleway(48, 500);
+}
+
+button {
+    background: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+
+.background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+}

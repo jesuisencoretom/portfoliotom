@@ -1,0 +1,27 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+
+    p {
+        margin: 2rem 0 2rem;
+        max-width: 30rem;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        max-width: 30rem;
+        a {
+            padding: .5rem 2rem .5rem 2rem;
+            border: 1px solid $black;
+            border-radius: 4rem;
+            text-decoration: unset;
+        }
+    }
+}

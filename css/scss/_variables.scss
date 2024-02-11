@@ -1,0 +1,19 @@
+$black: black;
+$white: white;
+
+$breakpoint-tablet: 800px;
+$breakpoint-phone: 600px;
+
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-VariableFont_wght.ttf');
+}
+@mixin font_raleway($size: 16, $weight: 400, $color: $black) {
+    font-family: 'Raleway', sans-serif;
+    font-size: #{$size}px;
+    font-weight: $weight;
+    color: $color;
+    line-height: normal;
+}

@@ -1,0 +1,47 @@
+#hero {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+#hero div { // text
+    h1 {
+        @include font_raleway(64, 700);
+        margin-bottom: 1rem;
+    }
+}
+
+#hero img {
+    height: 30rem;
+}
+
+.scrollCall {
+    position: relative;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid $black;
+    border-radius: 100%;
+    img {
+        width: 2rem;
+    }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+    #hero {
+        flex-direction: column;
+        div {
+            text-align: center;
+        }
+    }
+    .scrollCall {
+        display: none;
+    }
+}

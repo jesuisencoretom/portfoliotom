@@ -1,0 +1,72 @@
+#projects {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    filter: grayscale(100%);
+
+    h2 {
+        text-align: center;
+    }
+}
+
+
+#projects .container { // containers
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    width: 100%;
+    height: 18rem;
+}
+#projects .container:last-child {
+    flex-direction: row;
+}
+
+
+#projects .container div { // photos
+    position: relative;
+    flex-grow: 1;
+    border-radius: 2rem;
+}
+#projects .container div:first-child {
+    flex-grow: 1.5;
+}
+
+
+#projects .container div p { // text
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: $white;
+    padding: 0 2rem 1rem 1rem;
+
+    span {
+        @include font_raleway(24, 700, $white);
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-tablet) {
+    #projects {
+        gap: 1rem;
+        .container {
+            gap: 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-phone) {
+    #projects {
+        gap: 1rem;
+
+        .container {
+            flex-direction: column !important;
+            gap: 1rem;
+
+            div {
+                flex-grow: 1 !important;
+            }
+        }
+    }
+}

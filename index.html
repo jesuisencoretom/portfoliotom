@@ -3,159 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Portfolio Tom Wainberg</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script defer src="js/smoothScroll.js"></script>
-    <script defer src="js/resizePortaitHero.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script defer src="js/particles.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/handleMenu.js" defer></script>
+    <title>Tom Wainberg - Accueil</title>
 </head>
 <body>
-    <header><nav><ul>
-                <li><a href="#presentation">à propos</a></li>
-                <li><a href="#photos">photos</a></li>
-                <li><a href="#projects">projets</a></li>
-                <li><a href="#">contact</a></li>
-    </ul></nav></header>
+    <header>
+        <nav>
+            <a href="#about">à propos</a>
+            <a href="#photos">audiovisuel</a>
+            <a href="#projects">projets</a>
+            <a href="#">me contacter</a>
+            <button onclick="handleMenu()">menu</button>
+        </nav>
+    </header>
 
-    <section class="section" id="hero">
-        <div class="particles-js" id="particles-js-hero"></div>
-        <div class="contents">
-            <img src="static/images/portrait.png" alt="Portrait de Tom Wainberg">
-
-            <div>
-                <h1>Tom Wainberg</h1>
-                <p>
-                    Étudiant de première année en BUT Métiers du Multimédia et de l’Internet à Bordeaux.
-                </p>
-            </div>
-        </div>
-
-        <div id="scrollCall"><a href="#presentation">
-            <img id="imgScrollCall" src="/static/images/scroll_call/scroll_call.png" alt="appel à défilement">
-            <img src="/static/images/scroll_call/arrow.png">
-        </a></div>
+    <section id="menu">
+        <nav>
+            <a href="#about" onclick="handleMenu()">à propos</a>
+            <a href="#photos" onclick="handleMenu()">audiovisuel</a>
+            <a href="#projects" onclick="handleMenu()">projets</a>
+            <a href="#" onclick="handleMenu()">me contacter</a>
+            <button onclick="handleMenu()">close</button>
+        </nav>
     </section>
 
-    <section class="section" id="presentation">
-        <div class="particles-js" id="particles-js-presentation"></div>
+    <section id="hero">
+        <div>
+            <h1>Tom Wainberg</h1>
+            <p>
+                Étudiant de première année en BUT Métiers du Multimédia et de l'internet à Bordeaux
+            </p>
+        </div>
+        <img src="images/portrait.svg" alt="portrait">
+    </section>
+
+    <a href="#about" class="scrollCall"> <!-- _hero.scss -->
+        <img src="images/arrow-scroll-call.svg" alt="flèche de l'appel à défilement">
+    </a>
+
+    <section id="about">
         <h2>Qui suis-je ?</h2>
         <p>
-            Photographe à temps perdu, musicien autodidacte et grimpeur en herbe, j’aime exprimer ma créativité à travers n’importe quelle forme artistique à ma disposition.
+            Photographe à temps perdu, musicien autodidacte et grimpeur en herbe,
+            j'aime exprimer ma créativité à travers n'importe quelle forme artistique à ma disposition.
         </p>
-        <div class="links">
+        <div>
             <a href="#photos">voir mes photos/vidéos</a>
             <a href="#projects">voir mes projets</a>
+            <a href="#">voir tous mes projets</a>
         </div>
     </section>
 
-    <section class="section" id="photos">
-        <div class="particles-js" id="particles-js-photos"></div>
+    <section id="photos">
+
         <h2>Photos & Vidéos</h2>
-        <div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a href="#">domaine</a>
-                    </div>
-                </div>
+
+        <div class="container">
+
+            <div class="background-image" style="background-image: url('/images/photos/img2.svg')">
+                <p>(02) <span>Bordeaux</span></p>
             </div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a href="#">domaine</a>
-                    </div>
-                </div>
+
+            <div class="background-image" style="background-image: url('/images/photos/img1.svg')">
+                <p>(01) <span>Paris</span></p>
             </div>
+
         </div>
-        <div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a           href="#">domaine</a>
-                    </div>
-                </div>
+
+        <div class="container">
+
+            <div class="background-image" style="background-image: url('/images/photos/img3.svg')">
+                <p>(03) <span>Métro</span></p>
             </div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a           href="#">domaine</a>
-                    </div>
-                </div>
+
+            <div class="background-image" style="background-image: url('/images/photos/img4.svg')">
+                <p>(04) <span>Exploration Urbaine</span></p>
             </div>
+
         </div>
+
     </section>
 
-    <section class="section" id="projects">
-        <div class="particles-js" id="particles-js-projects"></div>
+    <section id="projects">
+
         <h2>Projets</h2>
-        <div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a href="#">domaine</a>
-                    </div>
-                </div>
+
+        <div class="container">
+
+            <div class="background-image" style="background-image: url('/images/photos/img2.svg')">
+                <p>(02) <span>Nom du projets</span></p>
             </div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a href="#">domaine</a>
-                    </div>
-                </div>
+
+            <div class="background-image" style="background-image: url('/images/photos/img1.svg')">
+                <p>(01) <span>Théories animées</span></p>
             </div>
+
         </div>
-        <div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a           href="#">domaine</a>
-                    </div>
-                </div>
+
+        <div class="container">
+
+            <div class="background-image" style="background-image: url('/images/photos/img3.svg')">
+                <p>(03) <span>Nom du projets</span></p>
             </div>
-            <div class="project">
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <p><span>(00) </span>Nom du projet</p>
-                    <div class="domains">
-                        <a href="#">domaine</a>
-                        <a           href="#">domaine</a>
-                    </div>
-                </div>
+
+            <div class="background-image" style="background-image: url('/images/photos/img4.svg')">
+                <p>(04) <span>Nom du projets</span></p>
             </div>
+
         </div>
+
     </section>
 
-    <div id="contacts">
-        <a href="#"><div class="contact contact-behance"><span>+</span>Behance</div></a>
-        <a href="#"><div class="contact"><span>+</span>LinkedIn</div></a>
-        <a href="#"><div class="contact"><span>+</span>CV</div></a>
-    </div>
-
-    <footer>
-        <p>&copy; Tom WAINBERG, 2024</p>
-    </footer>
 </body>
 </html>
