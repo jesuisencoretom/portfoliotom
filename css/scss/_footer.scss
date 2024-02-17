@@ -1,0 +1,14 @@
+footer {
+    border-top: 1px solid $black;
+    p {
+        margin: 1rem 0 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $breakpoint-phone) {
+    footer p {
+        margin: .75rem 0 .75rem;
+        @include font_raleway(14, 300);
+    }
+}
