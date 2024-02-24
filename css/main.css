@@ -55,6 +55,7 @@ html, html *, * * {
 }
 
 section {
+  position: relative;
   margin: 0 10vw 0 10vw;
 }
 
@@ -69,6 +70,13 @@ section {
     width: 80rem;
   }
 }
+.particles-js {
+  position: absolute;
+  z-index: -10;
+  height: 100%;
+  filter: blur(30px);
+}
+
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 48px;
@@ -293,7 +301,6 @@ footer p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  filter: grayscale(100%);
 }
 #projects h2,
 #photos h2 {
@@ -330,6 +337,7 @@ footer p {
   flex-grow: 1;
   border-radius: 2rem;
   overflow: hidden;
+  filter: grayscale(100%);
 }
 #projects .card p,
 #photos .card p {
