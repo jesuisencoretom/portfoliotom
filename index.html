@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head prefix="og: http://ogp.me/ns#">
+
+    <title>Accueil - Tom Wainberg</title>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="robots" content="all">
+    <meta name="target" content="all">
+
+    <meta name="author" content="Tom Wainberg">
+    <meta name="owner" content="Tom Wainberg">
+
+    <meta name="url" content="https://tom-wainberg.netlify.app/">
+    <meta name="identifier-URL" content="https://tom-wainberg.netlify.app/">
+    <link rel="canonical" href="https://tom-wainberg.netlify.app/" />
+
+    <meta name="subject" content="undefined">
+    <meta name="description" content="Portfolio Tom Wainberg. Étudiant au BUT MMI Bordeaux Montaigne. Découvrez mes projets, mes photos et mes vidéos. Vous trouverez mon LinkedIn, mon CV, mes réseaux..." />
+
+    <meta property="og:title" content="Accueil" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Portfolio Tom Wainberg. Étudiant au BUT MMI Bordeaux Montaigne. Découvrez mes projets, mes photos et mes vidéos. Vous trouverez mon LinkedIn, mon CV, mes réseaux..." />
+    <meta property="og:site_name" content="Tom Wainberg" />
+    <meta property="og:url" content="https://tom-wainberg.netlify.app/" />
+    <meta property="og:locale" content="fr" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tom-wainberg.netlify.app/">
+    <meta name="twitter:title" content="Accueil - Tom Wainberg" />
+    <meta name="twitter:description" content="Portfolio Tom Wainberg. Étudiant au BUT MMI Bordeaux Montaigne. Découvrez mes projets, mes photos et mes vidéos. Vous trouverez mon LinkedIn, mon CV, mes réseaux..." />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Accueil" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="js/handleMenu.js" defer></script>
-    <title>Tom Wainberg - Accueil</title>
+
 </head>
 <body>
+    <!-- HEADER / NAV / MENU -->
     <header>
         <nav>
             <a href="#about">à propos</a>
-            <a href="#photos">audiovisuel</a>
-            <a href="#projects">projets</a>
+            <a href="#photos">photos</a>
+            <a href="/pages/projects.html">projets</a>
             <a href="#contact">me contacter</a>
             <button onclick="handleMenu()">menu</button>
         </nav>
     </header>
-
     <section id="menu">
         <nav>
             <a href="#about" onclick="handleMenu()">à propos</a>
-            <a href="#photos" onclick="handleMenu()">audiovisuel</a>
-            <a href="#projects" onclick="handleMenu()">projets</a>
+            <a href="#photos" onclick="handleMenu()">photos</a>
+            <a href="/pages/projects.html" onclick="handleMenu()">projets</a>
             <a href="#contact" onclick="handleMenu()">me contacter</a>
             <button onclick="handleMenu()">close</button>
         </nav>
     </section>
+
 
     <section id="hero">
         <div>
@@ -38,10 +74,10 @@
         </div>
         <img src="images/portrait.svg" alt="portrait">
     </section>
-
-    <a href="#about" class="scrollCall"> <!-- _hero.scss -->
+    <a href="#about" class="scrollCall">
         <img src="images/arrow-scroll-call.svg" alt="flèche de l'appel à défilement">
     </a>
+
 
     <section id="about">
         <h2>Qui suis-je ?</h2>
@@ -50,82 +86,72 @@
             j'aime exprimer ma créativité à travers n'importe quelle forme artistique à ma disposition.
         </p>
         <div>
-            <a href="#photos">voir mes photos/vidéos</a>
-            <a href="#projects">voir mes projets</a>
-            <a href="/pages/projects.html">voir tous mes projets</a>
+            <a class="cta" href="#photos">photos</a>
+            <a class="cta" href="#projects">projets</a>
+            <a class="cta" href="/pages/projects.html">tous mes projets</a>
         </div>
     </section>
+
 
     <section id="photos">
-
-        <h2>Photos & Vidéos</h2>
+        <h2>Photos</h2>
 
         <div class="container">
+            <a href="#"class="card background-image" style="background-image: url('/images/photos/img2.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(02) <span>Nom du projets</span></p> <!-- Titre du projet -->
+            </a>
 
-            <div class="background-image" style="background-image: url('/images/photos/img2.svg')">
-                <p>(02) <span>Bordeaux</span></p>
-            </div>
-
-            <div class="background-image" style="background-image: url('/images/photos/img1.svg')">
-                <p>(01) <span>Paris</span></p>
-            </div>
-
+            <a href="/pages/projects/firstMotion.html" class="card background-image" style="background-image: url('/images/photos/img1.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(01) <span>Théories animées</span></p> <!-- Titre du projet -->
+            </a>
         </div>
 
         <div class="container">
+            <a href="#" class="card background-image" style="background-image: url('/images/photos/img3.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(03) <span>Nom du projets</span></p> <!-- Titre du projet -->
+            </a>
 
-            <div class="background-image" style="background-image: url('/images/photos/img3.svg')">
-                <p>(03) <span>Métro</span></p>
-            </div>
-
-            <div class="background-image" style="background-image: url('/images/photos/img4.svg')">
-                <p>(04) <span>Exploration Urbaine</span></p>
-            </div>
-
+            <a href="#" class="card background-image" style="background-image: url('/images/photos/img4.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(04) <span>Nom du projets</span></p> <!-- Titre du projet -->
+            </a>
         </div>
-
     </section>
-
     <section id="projects">
-
         <h2>Projets</h2>
 
         <div class="container">
+            <a href="#"class="card background-image" style="background-image: url('/images/photos/img2.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(02) <span>Nom du projets</span></p> <!-- Titre du projet -->
+            </a>
 
-            <div class="background-image" style="background-image: url('/images/photos/img2.svg')">
-                <p>(02) <span>Nom du projets</span></p>
-            </div>
-
-            <div class="background-image" style="background-image: url('/images/photos/img1.svg')">
-                <a href="/pages/projects/firstMotion.html"><p>(01) <span>Théories animées</span></p></a>
-            </div>
-
+            <a href="/pages/projects/firstMotion.html" class="card background-image" style="background-image: url('/images/photos/img1.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(01) <span>Théories animées</span></p> <!-- Titre du projet -->
+            </a>
         </div>
 
         <div class="container">
+            <a href="#" class="card background-image" style="background-image: url('/images/photos/img3.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(03) <span>Nom du projets</span></p> <!-- Titre du projet -->
+            </a>
 
-            <div class="background-image" style="background-image: url('/images/photos/img3.svg')">
-                <p>(03) <span>Nom du projets</span></p>
-            </div>
-
-            <div class="background-image" style="background-image: url('/images/photos/img4.svg')">
-                <p>(04) <span>Nom du projets</span></p>
-            </div>
-
+            <a href="#" class="card background-image" style="background-image: url('/images/photos/img4.svg')"> <!-- image du projet(url) & lien vers la page(href) -->
+                <p>(04) <span>Nom du projets</span></p> <!-- Titre du projet -->
+            </a>
         </div>
 
+        <a class="cta" href="/pages/projects.html">plus de projets</a>
     </section>
 
-    <section id="contact">
+
+    <section id="contact"> <!-- possibilité de dubliquer un 'li' pour rajouter un lien -->
         <ul>
-            <li><a href="#"><span>+</span>Youtube<img src="images/call-click-file.svg"></a></li>
-            <li><a href="https://www.linkedin.com/in/tom-wainberg" target="_blank"><span>+</span>LinkedIn<img src="images/call-click-file.svg"></a></li>
-            <li><a href="images/WAINBERG_Tom_CV.pdf" target="_blank"><span>+</span>CV<img src="images/call-click-file.svg"></a></li>
+            <li><a href="#"><span>+</span>Youtube<img src="images/call-click-file.svg"></a></li> <!-- lien & titre modifiable -->
+            <li><a href="https://www.linkedin.com/in/tom-wainberg" target="_blank"><span>+</span>LinkedIn<img src="images/call-click-file.svg"></a></li> <!-- lien & titre modifiable -->
+            <li><a href="images/WAINBERG_Tom_CV.pdf" target="_blank"><span>+</span>CV<img src="images/call-click-file.svg"></a></li> <!-- lien & titre modifiable -->
         </ul>
     </section>
-
     <footer>
-        <p>&copy; Tom WAINBERG, 2024</p>
+        <p>&copy; Tom WAINBERG, 2024</p> <!-- possibilité de rajouter du contenu textuel -->
     </footer>
 </body>
 </html>

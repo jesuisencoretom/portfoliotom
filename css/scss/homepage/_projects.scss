@@ -1,5 +1,6 @@
-#projects {
-    margin-top: 10rem;
+// ------<< SECTIONS >>------
+#projects,
+#photos {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -8,65 +9,104 @@
     h2 {
         text-align: center;
     }
+
+    .cta {
+        width: fit-content;
+        align-self: center;
+    }
+}
+#photos {
+    margin-bottom: 10rem;
 }
 
 
-#projects .container { // containers
+// ------<< CARD CONTAINER >>------
+#projects .container,
+#photos .container {
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
     width: 100%;
     height: 18rem;
 }
-#projects .container:last-child {
+#projects .container:nth-last-child(2),
+#photos .container:nth-last-child(1) {
     flex-direction: row;
 }
 
-
-#projects .container div { // photos
+// ------<< CARD >>------
+#projects .card,
+#photos .card {
     position: relative;
     flex-grow: 1;
     border-radius: 2rem;
+    overflow: hidden;
+    p {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: $white;
+        padding: 0 2rem 1rem 1rem;
+        span {
+            @include font_raleway(24, 700, $white);
+        }
+    }
 }
-#projects .container div:first-child {
+#projects .card:first-child,
+#photos .card:first-child {
     flex-grow: 1.5;
 }
 
 
-#projects .container div p { // text
+// -----------------------------------
+// ------------<< HOVER >>------------
+// -----------------------------------
+#projects .card::after,
+#photos .card::after{
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    color: $white;
-    padding: 0 2rem 1rem 1rem;
-
-    span {
-        @include font_raleway(24, 700, $white);
-    }
+    width: 100%;
+    height: 30%;
+    background: $black;
+    transform: translateY(100%);
+    @extend %transition-exit;
+}
+#projects .card:hover::after,
+#photos .card:hover::after{
+    transform: translateY(0%);
+    @extend %transition-entry;
 }
 
 
+// -----------------------------------
+// ------------<< MEDIA >>------------
+// -----------------------------------
 @media screen and (max-width: $breakpoint-tablet) {
-    #projects {
+    #projects,
+    #photos {
         gap: 1rem;
         .container {
             gap: 1rem;
         }
     }
 }
-
-
 @media screen and (max-width: $breakpoint-phone) {
-    #projects {
+    #projects,
+    #photos {
         gap: 1rem;
-
         .container {
             flex-direction: column !important;
             gap: 1rem;
-
-            div {
-                flex-grow: 1 !important;
-            }
         }
+        .card {
+            flex-grow: 1 !important;
+        }
+    }
+    #projects .card::after,
+    #photos .card::after{
+        height: 40%;
     }
 }

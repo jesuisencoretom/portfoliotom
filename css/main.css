@@ -2,6 +2,31 @@
   font-family: "Raleway";
   src: url("/fonts/Raleway-VariableFont_wght.ttf");
 }
+#contact a:hover::after, #contact a:hover img, #contact a:hover span, #contact a:hover, #projects .card:hover::after,
+#photos .card:hover::after, .scrollCall:hover img, .scrollCall:hover, header nav a:hover::after, header nav a:hover, .cta:hover {
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+#contact a::after, #contact a img, #contact a span, #contact a, #projects .card::after,
+#photos .card::after, .scrollCall img, .scrollCall, header nav a::after, header nav a, .cta {
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.cta {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border: 1px solid black;
+  border-radius: 4rem;
+  text-decoration: unset;
+}
+
+.cta:hover {
+  background: black;
+  color: white;
+}
+
 body::-webkit-scrollbar {
   width: 1rem;
 }
@@ -17,7 +42,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:active {
-  background-color: #707070;
+  background-color: #606060;
 }
 
 html, html *, * * {
@@ -75,7 +100,14 @@ header nav {
   align-items: center;
 }
 header nav a {
+  position: relative;
+  height: 100%;
+  width: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: unset;
+  overflow: hidden;
 }
 header nav button {
   display: none;
@@ -86,6 +118,29 @@ header nav button {
   line-height: normal;
   font-style: italic;
   margin-right: 5vw;
+}
+
+header nav a::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background: black;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header nav a:hover::after {
+  transform: translateY(0);
 }
 
 #menu {
@@ -195,6 +250,13 @@ footer p {
   width: 2rem;
 }
 
+.scrollCall:hover {
+  background: black;
+}
+.scrollCall:hover img {
+  filter: invert(100%);
+}
+
 @media screen and (max-width: 50rem) {
   #hero {
     flex-direction: column;
@@ -225,23 +287,30 @@ footer p {
   gap: 1.5rem;
   max-width: 30rem;
 }
-#about div a {
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  border: 1px solid black;
-  border-radius: 4rem;
-  text-decoration: unset;
-}
 
+#projects,
 #photos {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   filter: grayscale(100%);
 }
+#projects h2,
 #photos h2 {
   text-align: center;
 }
+#projects .cta,
+#photos .cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
 
+#photos {
+  margin-bottom: 10rem;
+}
+
+#projects .container,
 #photos .container {
   display: flex;
   flex-direction: row-reverse;
@@ -250,28 +319,29 @@ footer p {
   height: 18rem;
 }
 
-#photos .container:last-child {
+#projects .container:nth-last-child(2),
+#photos .container:nth-last-child(1) {
   flex-direction: row;
 }
 
-#photos .container div {
+#projects .card,
+#photos .card {
   position: relative;
   flex-grow: 1;
   border-radius: 2rem;
+  overflow: hidden;
 }
-
-#photos .container div:first-child {
-  flex-grow: 1.5;
-}
-
-#photos .container div p {
+#projects .card p,
+#photos .card p {
+  z-index: 1;
   position: absolute;
   left: 0;
   bottom: 0;
   color: white;
   padding: 0 2rem 1rem 1rem;
 }
-#photos .container div p span {
+#projects .card p span,
+#photos .card p span {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -279,92 +349,55 @@ footer p {
   line-height: normal;
 }
 
-@media screen and (max-width: 50rem) {
-  #photos {
-    gap: 1rem;
-  }
-  #photos .container {
-    gap: 1rem;
-  }
-}
-@media screen and (max-width: 38rem) {
-  #photos {
-    gap: 1rem;
-  }
-  #photos .container {
-    flex-direction: column !important;
-    gap: 1rem;
-  }
-  #photos .container div {
-    flex-grow: 1 !important;
-  }
-}
-#projects {
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  filter: grayscale(100%);
-}
-#projects h2 {
-  text-align: center;
+#projects .card:first-child,
+#photos .card:first-child {
+  flex-grow: 1.5;
 }
 
-#projects .container {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 2rem;
+#projects .card::after,
+#photos .card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 18rem;
+  height: 30%;
+  background: black;
+  transform: translateY(100%);
 }
 
-#projects .container:last-child {
-  flex-direction: row;
-}
-
-#projects .container div {
-  position: relative;
-  flex-grow: 1;
-  border-radius: 2rem;
-}
-
-#projects .container div:first-child {
-  flex-grow: 1.5;
-}
-
-#projects .container div p {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: white;
-  padding: 0 2rem 1rem 1rem;
-}
-#projects .container div p span {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-  line-height: normal;
+#projects .card:hover::after,
+#photos .card:hover::after {
+  transform: translateY(0%);
 }
 
 @media screen and (max-width: 50rem) {
-  #projects {
+  #projects,
+  #photos {
     gap: 1rem;
   }
-  #projects .container {
+  #projects .container,
+  #photos .container {
     gap: 1rem;
   }
 }
 @media screen and (max-width: 38rem) {
-  #projects {
+  #projects,
+  #photos {
     gap: 1rem;
   }
-  #projects .container {
+  #projects .container,
+  #photos .container {
     flex-direction: column !important;
     gap: 1rem;
   }
-  #projects .container div {
+  #projects .card,
+  #photos .card {
     flex-grow: 1 !important;
+  }
+  #projects .card::after,
+  #photos .card::after {
+    height: 40%;
   }
 }
 #contact {
@@ -373,6 +406,7 @@ footer p {
   border-bottom: 1px solid black;
 }
 #contact a {
+  position: relative;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -383,8 +417,9 @@ footer p {
   font-weight: 400;
   color: black;
   line-height: normal;
+  overflow: hidden;
 }
-#contact span {
+#contact a span {
   margin-right: 3rem;
   font-family: "Raleway", sans-serif;
   font-size: 96px;
@@ -392,8 +427,34 @@ footer p {
   color: black;
   line-height: normal;
 }
-#contact img {
+#contact a img {
   margin-left: 3rem;
+}
+#contact a:hover {
+  color: white;
+}
+#contact a:hover span {
+  color: white;
+}
+#contact a:hover img {
+  filter: invert(100%);
+}
+#contact a::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+  background: black;
+  transform: translateX(-100%);
+}
+#contact a:hover::after {
+  transform: translateX(0%);
 }
 
 @media screen and (max-width: 50rem) {

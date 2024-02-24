@@ -1,0 +1,13 @@
+.cta {
+    padding: .5rem 2rem .5rem 2rem;
+    border: 1px solid $black;
+    border-radius: 4rem;
+    text-decoration: unset;
+    @extend %transition-exit;
+}
+
+.cta:hover {
+    @extend %transition-entry;
+    background: $black;
+    color: $white;
+}
