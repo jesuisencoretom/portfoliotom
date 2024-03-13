@@ -2,14 +2,33 @@
   font-family: "Raleway";
   src: url("/fonts/Raleway-VariableFont_wght.ttf");
 }
-#contact a:hover::after, #contact a:hover img, #contact a:hover span, #contact a:hover, #projects .card:hover::after,
-#photos .card:hover::after, .scrollCall:hover img, .scrollCall:hover, header nav a:hover::after, header nav a:hover, .cta:hover {
+
+#contact a:hover::after,
+#contact a:hover img,
+#contact a:hover span,
+#contact a:hover,
+#projects .card:hover::after,
+#photos .card:hover::after,
+.scrollCall:hover img,
+.scrollCall:hover,
+header nav a:hover::after,
+header nav a:hover,
+.cta:hover {
   transition-duration: 0.25s;
   transition-timing-function: ease-out;
 }
 
-#contact a::after, #contact a img, #contact a span, #contact a, #projects .card::after,
-#photos .card::after, .scrollCall img, .scrollCall, header nav a::after, header nav a, .cta {
+#contact a::after,
+#contact a img,
+#contact a span,
+#contact a,
+#projects .card::after,
+#photos .card::after,
+.scrollCall img,
+.scrollCall,
+header nav a::after,
+header nav a,
+.cta {
   transition-delay: 0.1s;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
@@ -45,7 +64,9 @@ body::-webkit-scrollbar-thumb:active {
   background-color: #606060;
 }
 
-html, html *, * * {
+html,
+html *,
+* * {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -64,12 +85,14 @@ section {
     margin: 0 5vw 0 5vw;
   }
 }
+
 @media screen and (min-width: 100rem) {
   section {
     margin: 0 auto 0 auto;
     width: 80rem;
   }
 }
+
 .particles-js {
   position: absolute;
   z-index: -10;
@@ -107,6 +130,7 @@ header nav {
   justify-content: space-evenly;
   align-items: center;
 }
+
 header nav a {
   position: relative;
   height: 100%;
@@ -117,6 +141,7 @@ header nav a {
   text-decoration: unset;
   overflow: hidden;
 }
+
 header nav button {
   display: none;
   font-family: "Raleway", sans-serif;
@@ -166,6 +191,7 @@ header nav a:hover::after {
   margin: 0;
   background: white;
 }
+
 #menu.active nav {
   display: flex;
   flex-direction: column;
@@ -174,6 +200,7 @@ header nav a:hover::after {
   height: 100svh;
   gap: 2rem;
 }
+
 #menu.active nav a {
   text-decoration: unset;
   font-family: "Raleway", sans-serif;
@@ -182,6 +209,7 @@ header nav a:hover::after {
   color: black;
   line-height: normal;
 }
+
 #menu.active nav button {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -195,16 +223,20 @@ header nav a:hover::after {
   header nav {
     justify-content: end;
   }
+
   header nav a {
     display: none;
   }
+
   header nav button {
     display: unset;
   }
 }
+
 footer {
   border-top: 1px solid black;
 }
+
 footer p {
   margin: 1rem 0 1rem;
   text-align: center;
@@ -220,6 +252,7 @@ footer p {
     line-height: normal;
   }
 }
+
 #hero {
   position: relative;
   margin-top: 4rem;
@@ -254,6 +287,7 @@ footer p {
   border: 3px solid black;
   border-radius: 100%;
 }
+
 .scrollCall img {
   width: 2rem;
 }
@@ -261,6 +295,7 @@ footer p {
 .scrollCall:hover {
   background: black;
 }
+
 .scrollCall:hover img {
   filter: invert(100%);
 }
@@ -269,13 +304,16 @@ footer p {
   #hero {
     flex-direction: column;
   }
+
   #hero div {
     text-align: center;
   }
+
   .scrollCall {
     display: none;
   }
 }
+
 #about {
   display: flex;
   flex-direction: column;
@@ -283,11 +321,13 @@ footer p {
   align-items: center;
   height: 100svh;
 }
+
 #about p {
   margin: 2rem 0 2rem;
   max-width: 30rem;
   text-align: center;
 }
+
 #about div {
   display: flex;
   flex-wrap: wrap;
@@ -302,10 +342,12 @@ footer p {
   flex-direction: column;
   gap: 2rem;
 }
+
 #projects h2,
 #photos h2 {
   text-align: center;
 }
+
 #projects .cta,
 #photos .cta {
   width: -moz-fit-content;
@@ -339,6 +381,7 @@ footer p {
   overflow: hidden;
   filter: grayscale(100%);
 }
+
 #projects .card p,
 #photos .card p {
   z-index: 1;
@@ -348,6 +391,7 @@ footer p {
   color: white;
   padding: 0 2rem 1rem 1rem;
 }
+
 #projects .card p span,
 #photos .card p span {
   font-family: "Raleway", sans-serif;
@@ -379,40 +423,69 @@ footer p {
   transform: translateY(0%);
 }
 
+#card-theories {
+  background-image: url("../images/miniatures/miniature-public-actif.webp");
+  background-size: cover;
+}
+
+#card-escapades {
+  background-image: url("../images/miniatures/miniature-escapades-temporelles.webp");
+  background-size: cover;
+}
+
+#card-befake {
+  background-image: url("../images/miniatures/miniature-befake.webp");
+  background-size: cover;
+}
+
+#card-musba {
+  background-image: url("../images/miniatures/miniature-refonte-musba.webp");
+  background-size: cover;
+}
+
 @media screen and (max-width: 50rem) {
+
   #projects,
   #photos {
     gap: 1rem;
   }
+
   #projects .container,
   #photos .container {
     gap: 1rem;
   }
 }
+
 @media screen and (max-width: 38rem) {
+
   #projects,
   #photos {
     gap: 1rem;
   }
+
   #projects .container,
   #photos .container {
     flex-direction: column !important;
     gap: 1rem;
   }
+
   #projects .card,
   #photos .card {
     flex-grow: 1 !important;
   }
+
   #projects .card::after,
   #photos .card::after {
     height: 40%;
   }
 }
+
 #contact {
   margin-top: 10rem;
   margin-bottom: 10rem;
   border-bottom: 1px solid black;
 }
+
 #contact a {
   position: relative;
   display: flex;
@@ -427,6 +500,7 @@ footer p {
   line-height: normal;
   overflow: hidden;
 }
+
 #contact a span {
   margin-right: 3rem;
   font-family: "Raleway", sans-serif;
@@ -435,18 +509,23 @@ footer p {
   color: black;
   line-height: normal;
 }
+
 #contact a img {
   margin-left: 3rem;
 }
+
 #contact a:hover {
   color: white;
 }
+
 #contact a:hover span {
   color: white;
 }
+
 #contact a:hover img {
   filter: invert(100%);
 }
+
 #contact a::after {
   z-index: -1;
   content: "";
@@ -461,6 +540,7 @@ footer p {
   background: black;
   transform: translateX(-100%);
 }
+
 #contact a:hover::after {
   transform: translateX(0%);
 }
@@ -474,6 +554,7 @@ footer p {
     color: black;
     line-height: normal;
   }
+
   #contact a {
     padding-left: 2rem;
     font-family: "Raleway", sans-serif;
@@ -482,11 +563,13 @@ footer p {
     color: black;
     line-height: normal;
   }
+
   #contact img {
     margin-left: 2.5rem;
     scale: 0.9;
   }
 }
+
 @media screen and (max-width: 38rem) {
   #contact span {
     margin-right: 2rem;
@@ -496,6 +579,7 @@ footer p {
     color: black;
     line-height: normal;
   }
+
   #contact a {
     padding-left: 1.5rem;
     font-family: "Raleway", sans-serif;
@@ -504,11 +588,13 @@ footer p {
     color: black;
     line-height: normal;
   }
+
   #contact img {
     margin-left: 2rem;
     scale: 0.8;
   }
 }
+
 #project-page-title h1 {
   font-family: "Raleway", sans-serif;
   font-size: 64px;
@@ -524,16 +610,19 @@ footer p {
   gap: 3rem;
   padding: 2rem 0 10rem;
 }
+
 #all-projects .project {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
+
 #all-projects .project .background-image {
   width: 25rem;
   height: 15rem;
   border-radius: 2rem;
 }
+
 #all-projects .project .text .title {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
@@ -542,6 +631,7 @@ footer p {
   line-height: normal;
   margin-bottom: 0.5rem;
 }
+
 #all-projects .project .text .text {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -549,9 +639,11 @@ footer p {
   color: black;
   line-height: normal;
 }
+
 #all-projects a {
   text-decoration: unset;
 }
+
 #all-projects .backToHome {
   border: 1px solid black;
   border-radius: 100px;
@@ -565,33 +657,41 @@ footer p {
   #project-page-title h1 {
     margin-top: 2rem;
   }
+
   #all-projects {
     gap: 2.5rem;
   }
+
   #all-projects .project {
     gap: 2rem;
   }
 }
+
 @media screen and (max-width: 38rem) {
   #project-page-title h1 {
     font-size: 48px;
     margin: 1rem 0 0.5rem;
   }
+
   #all-projects {
     gap: 3rem;
     padding-bottom: 6rem;
   }
+
   #all-projects .project {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   #all-projects .project .background-image {
     width: 100%;
     height: 14rem;
   }
+
   #all-projects .project .text {
     width: 100%;
   }
+
   #all-projects .project .text .title {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -601,6 +701,7 @@ footer p {
     margin-bottom: 0.25rem;
     padding-left: 0.5rem;
   }
+
   #all-projects .project .text .text {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -609,15 +710,18 @@ footer p {
     line-height: normal;
     padding-left: 0.5rem;
   }
+
   #all-projects .backToHome {
     align-self: center;
   }
 }
+
 @media screen and (min-width: 448px) and (max-width: 38rem) {
   #all-projects .project .background-image {
     height: 16rem;
   }
 }
+
 #project-page-title h1 {
   font-family: "Raleway", sans-serif;
   font-size: 64px;
@@ -626,6 +730,7 @@ footer p {
   line-height: normal;
   margin: 4rem 0 1rem;
 }
+
 #project-page-title h1 span {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
@@ -633,6 +738,7 @@ footer p {
   color: black;
   line-height: normal;
 }
+
 #project-page-title p {
   text-align: center;
 }
@@ -643,15 +749,18 @@ footer p {
   gap: 3rem;
   padding: 2rem 0 10rem;
 }
+
 #firstMotion .project {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
+
 #firstMotion .project .background-image {
   width: 25rem;
   height: 15rem;
 }
+
 #firstMotion .project .text .title {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
@@ -660,6 +769,7 @@ footer p {
   line-height: normal;
   margin-bottom: 0.5rem;
 }
+
 #firstMotion .project .text .text {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -667,6 +777,7 @@ footer p {
   color: black;
   line-height: normal;
 }
+
 #firstMotion .backToHome {
   border: 1px solid black;
   border-radius: 100px;
@@ -680,33 +791,41 @@ footer p {
   #project-page-title h1 {
     margin-top: 2rem;
   }
+
   #firstMotion {
     gap: 2.5rem;
   }
+
   #firstMotion .project {
     gap: 2rem;
   }
 }
+
 @media screen and (max-width: 38rem) {
   #project-page-title h1 {
     font-size: 48px;
     margin: 1rem 0 0.5rem;
   }
+
   #firstMotion {
     gap: 3rem;
     padding-bottom: 6rem;
   }
+
   #firstMotion .project {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   #firstMotion .project .background-image {
     width: 100%;
     height: 14rem;
   }
+
   #firstMotion .project .text {
     width: 100%;
   }
+
   #firstMotion .project .text .title {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -716,6 +835,7 @@ footer p {
     margin-bottom: 0.25rem;
     padding-left: 0.5rem;
   }
+
   #firstMotion .project .text .text {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -724,12 +844,16 @@ footer p {
     line-height: normal;
     padding-left: 0.5rem;
   }
+
   #firstMotion .backToHome {
     align-self: center;
   }
 }
+
 @media screen and (min-width: 448px) and (max-width: 38rem) {
   #firstMotion .project .background-image {
     height: 16rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
