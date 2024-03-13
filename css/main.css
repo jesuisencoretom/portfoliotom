@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "AlteGrotesk";
-  src: url("/fonts/AlteGrotesk-VariableFont_wght.ttf");
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -513,9 +513,9 @@ footer p {
 
 #contact a span {
   margin-right: 3rem;
-  font-family: "AlteGrotesk", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 96px;
-  font-weight: 100;
+  font-weight: 2;
   color: black;
   line-height: normal;
 }
@@ -606,7 +606,7 @@ footer p {
 }
 
 #project-page-title h1 {
-  font-family: "AlteGrotesk", sans-serif;
+  font-family: "AlteGroteskBold", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
@@ -733,7 +733,7 @@ footer p {
 }
 
 #project-page-title h1 {
-  font-family: "AlteGrotesk", sans-serif;
+  font-family: "AlteGroteskBold", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
