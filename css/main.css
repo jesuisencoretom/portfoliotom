@@ -111,7 +111,7 @@ section {
 }
 
 h2 {
-  font-family: "AlteGrotesk", sans-serif;
+  font-family: "AlteGroteskBold", sans-serif;
   font-size: 48px;
   font-weight: 500;
   color: black;
@@ -346,6 +346,7 @@ footer p {
   max-width: 30rem;
 }
 
+
 #projects,
 #photos {
   display: flex;
@@ -363,6 +364,9 @@ footer p {
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
+}
+#projects {
+  margin-bottom: 10rem;
 }
 
 #photos {
@@ -426,7 +430,9 @@ footer p {
   height: 30%;
   background: black;
   transform: translateY(100%);
+  
 }
+
 
 #projects .card:hover::after,
 #photos .card:hover::after {
