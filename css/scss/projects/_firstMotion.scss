@@ -1,102 +1,102 @@
 #project-page-title {
-    h1 {
-        @include font_raleway(64, 700);
-        margin: 4rem 0 1rem;
+  h1 {
+    @include font_AlteGrotesk(64, 700);
+    margin: 4rem 0 1rem;
 
-        span {
-            @include font_raleway(40, normal);
-        }
+    span {
+      @include font_AlteGrotesk(40, normal);
     }
+  }
 
-    p {
-        text-align: center;
-    }
+  p {
+    text-align: center;
+  }
 }
 
 #firstMotion {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 0 10rem;
+
+  .project {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 3rem;
-    padding: 2rem 0 10rem;
-
-    .project {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-        .background-image {
-            width: 25rem;
-            height: 15rem;
-        }
-        .text {
-            .title {
-                @include font_raleway(40, 600);
-                margin-bottom: .5rem;
-            }
-            .text {
-                @include font_raleway(20);
-            }
-        }
+    .background-image {
+      width: 25rem;
+      height: 15rem;
     }
-
-    .backToHome {
-        border: 1px solid $black;
-        border-radius: 100px;
-        padding: .5rem 2rem .5rem 2rem;
-        width: fit-content;
-        text-decoration: unset;
+    .text {
+      .title {
+        @include font_AlteGrotesk(40, 600);
+        margin-bottom: 0.5rem;
+      }
+      .text {
+        @include font_AlteGrotesk(20);
+      }
     }
+  }
+
+  .backToHome {
+    border: 1px solid $black;
+    border-radius: 100px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    width: fit-content;
+    text-decoration: unset;
+  }
 }
 
 @media screen and (max-width: $breakpoint-tablet) {
-    #project-page-title h1 {
-        margin-top: 2rem;
-    }
+  #project-page-title h1 {
+    margin-top: 2rem;
+  }
 
-    #firstMotion {
-        gap: 2.5rem;
-        .project {
-            gap: 2rem;
-        }
+  #firstMotion {
+    gap: 2.5rem;
+    .project {
+      gap: 2rem;
     }
+  }
 }
 
 @media screen and (max-width: $breakpoint-phone) {
-    #project-page-title h1 {
-        font-size: 48px;
-        margin: 1rem 0 .5rem;
-    }
+  #project-page-title h1 {
+    font-size: 48px;
+    margin: 1rem 0 0.5rem;
+  }
 
-    #firstMotion {
-        gap: 3rem;
-        padding-bottom: 6rem;
-        .project {
-            flex-direction: column;
-            gap: .5rem;
-            .background-image {
-                width: 100%;
-                height: 14rem;
-            }
-            .text {
-                width: 100%;
-                .title {
-                    @include font_raleway(26, 600);
-                    margin-bottom: .25rem;
-                    padding-left: .5rem;
-                }
-                .text {
-                    @include font_raleway(16);
-                    padding-left: .5rem;
-                }
-            }
+  #firstMotion {
+    gap: 3rem;
+    padding-bottom: 6rem;
+    .project {
+      flex-direction: column;
+      gap: 0.5rem;
+      .background-image {
+        width: 100%;
+        height: 14rem;
+      }
+      .text {
+        width: 100%;
+        .title {
+          @include font_AlteGrotesk(26, 600);
+          margin-bottom: 0.25rem;
+          padding-left: 0.5rem;
         }
-        .backToHome {
-            align-self: center;
+        .text {
+          @include font_AlteGrotesk(16);
+          padding-left: 0.5rem;
         }
+      }
     }
+    .backToHome {
+      align-self: center;
+    }
+  }
 }
 
 @media screen and (min-width: 448px) and (max-width: $breakpoint-phone) {
-    #firstMotion .project .background-image {
-        height: 16rem;
-    }
+  #firstMotion .project .background-image {
+    height: 16rem;
+  }
 }

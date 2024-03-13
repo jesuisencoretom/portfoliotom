@@ -6,28 +6,26 @@ $breakpoint-tablet: 50rem;
 $breakpoint-phone: 38rem;
 $breakpoint-large-screen: 100rem;
 
-
 // ------<< FONTS >>------
 @font-face {
-    font-family: 'Raleway';
-    src: url('/fonts/Raleway-VariableFont_wght.ttf');
+  font-family: "AlteGrotesk";
+  src: url("/fonts/AlteGrotesk-VariableFont_wght.ttf");
 }
-@mixin font_raleway($size: 16, $weight: 400, $color: $black) {
-    font-family: 'Raleway', sans-serif;
-    font-size: #{$size}px;
-    font-weight: $weight;
-    color: $color;
-    line-height: normal;
+@mixin font_AlteGrotesk($size: 16, $weight: 400, $color: $black) {
+  font-family: "AlteGrotesk", sans-serif;
+  font-size: #{$size}px;
+  font-weight: $weight;
+  color: $color;
+  line-height: normal;
 }
-
 
 // ------<< PLACEHOLDER >>------
 %transition-entry {
-    transition-duration: .25s;
-    transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
 }
 %transition-exit {
-    transition-delay: .1s;
-    transition-duration: .4s;
-    transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
 }

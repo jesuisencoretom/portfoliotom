@@ -1,42 +1,44 @@
-html, html *, * * {
-    @include font_raleway;
-    scroll-behavior: smooth;
+html,
+html *,
+* * {
+  @include font_AlteGrotesk;
+  scroll-behavior: smooth;
 }
 
 section {
-    position: relative;
-    margin: 0 10vw 0 10vw;
+  position: relative;
+  margin: 0 10vw 0 10vw;
 }
 @media screen and (max-width: $breakpoint-tablet) {
-    section {
-        margin: 0 5vw 0 5vw;
-    }
+  section {
+    margin: 0 5vw 0 5vw;
+  }
 }
 @media screen and (min-width: $breakpoint-large-screen) {
-    section {
-        margin: 0 auto 0 auto;
-        width: 80rem;
-    }
+  section {
+    margin: 0 auto 0 auto;
+    width: 80rem;
+  }
 }
 
 .particles-js {
-    position: absolute;
-    z-index: -10;
-    height: 100%;
-    filter: blur(30px);
+  position: absolute;
+  z-index: -10;
+  height: 100%;
+  filter: blur(30px);
 }
 
 h2 {
-    @include font_raleway(48, 500);
+  @include font_AlteGrotesk(48, 500);
 }
 
 button {
-    background: unset;
-    border: unset;
-    cursor: pointer;
+  background: unset;
+  border: unset;
+  cursor: pointer;
 }
 
 .background-image {
-    background-position: center;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }

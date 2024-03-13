@@ -1,99 +1,97 @@
 header {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 header nav {
-    border-top: 1px solid $black;
-    height: 3rem;
+  border-top: 1px solid $black;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    position: relative;
+    height: 100%;
+    width: 14vw;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    a {
-        position: relative;
-        height: 100%;
-        width: 14vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: unset;
-        overflow: hidden;
-        @extend %transition-exit;
-    }
-    button {
-        display: none;
-        @include font_raleway(20, 400);
-        font-style: italic;
-        margin-right: 5vw;
-    }
+    justify-content: center;
+    text-decoration: unset;
+    overflow: hidden;
+    @extend %transition-exit;
+  }
+  button {
+    display: none;
+    @include font_AlteGrotesk(20, 400);
+    font-style: italic;
+    margin-right: 5vw;
+  }
 }
 
 header nav a::after {
-    z-index: -1;
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(-100%);
-    height: 100%;
-    width: 100%;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    background: $black;
-    @extend %transition-exit;
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background: $black;
+  @extend %transition-exit;
 }
 
 header nav a:hover {
-    @extend %transition-entry;
-    color: $white;
+  @extend %transition-entry;
+  color: $white;
 }
 header nav a:hover::after {
-    @extend %transition-entry;
-    transform: translateY(0);
+  @extend %transition-entry;
+  transform: translateY(0);
 }
-
 
 #menu {
-    display: none;
+  display: none;
 }
 #menu.active {
-    display: unset;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100svh;
-    width: 100vw;
-    margin: 0;
-    background: $white;
+  display: unset;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100svh;
+  width: 100vw;
+  margin: 0;
+  background: $white;
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100svh;
-        gap: 2rem;
-        a {
-            text-decoration: unset;
-            @include font_raleway(24, 500);
-        }
-        button {
-            @include font_raleway(20, 400);
-            font-style: italic;
-        }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    gap: 2rem;
+    a {
+      text-decoration: unset;
+      @include font_AlteGrotesk(24, 500);
     }
+    button {
+      @include font_AlteGrotesk(20, 400);
+      font-style: italic;
+    }
+  }
 }
 
-
 @media screen and (max-width: $breakpoint-tablet) {
-    header nav {
-        justify-content: end;
-        a {
-            display: none;
-        }
-        button {
-            display: unset;
-        }
+  header nav {
+    justify-content: end;
+    a {
+      display: none;
     }
+    button {
+      display: unset;
+    }
+  }
 }

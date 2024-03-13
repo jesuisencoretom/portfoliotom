@@ -1,6 +1,16 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "AlteGrotesk";
+  src: url("/fonts/AlteGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "AlteGrotesk";
+  src: url("/fonts/AlteHaasGroteskRegular.ttf");
+}
+
+@font-face {
+  font-family: "AlteGroteskBold";
+  src: url("/fonts/AlteHaasGroteskBold.ttf");
 }
 
 #contact a:hover::after,
@@ -67,7 +77,7 @@ body::-webkit-scrollbar-thumb:active {
 html,
 html *,
 * * {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: black;
@@ -101,7 +111,7 @@ section {
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 48px;
   font-weight: 500;
   color: black;
@@ -144,7 +154,7 @@ header nav a {
 
 header nav button {
   display: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: black;
@@ -203,7 +213,7 @@ header nav a:hover::after {
 
 #menu.active nav a {
   text-decoration: unset;
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: black;
@@ -211,7 +221,7 @@ header nav a:hover::after {
 }
 
 #menu.active nav button {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: black;
@@ -245,7 +255,7 @@ footer p {
 @media screen and (max-width: 38rem) {
   footer p {
     margin: 0.75rem 0 0.75rem;
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: black;
@@ -264,7 +274,7 @@ footer p {
 }
 
 #hero div h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGroteskBold", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
@@ -394,7 +404,7 @@ footer p {
 
 #projects .card p span,
 #photos .card p span {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: white;
@@ -493,7 +503,7 @@ footer p {
   padding-left: 2rem;
   border-top: 1px solid black;
   text-decoration: unset;
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 28px;
   font-weight: 400;
   color: black;
@@ -503,7 +513,7 @@ footer p {
 
 #contact a span {
   margin-right: 3rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 96px;
   font-weight: 100;
   color: black;
@@ -548,7 +558,7 @@ footer p {
 @media screen and (max-width: 50rem) {
   #contact span {
     margin-right: 2.5rem;
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 80px;
     font-weight: 100;
     color: black;
@@ -557,7 +567,7 @@ footer p {
 
   #contact a {
     padding-left: 2rem;
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 26px;
     font-weight: 400;
     color: black;
@@ -573,7 +583,7 @@ footer p {
 @media screen and (max-width: 38rem) {
   #contact span {
     margin-right: 2rem;
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 64px;
     font-weight: 100;
     color: black;
@@ -582,7 +592,7 @@ footer p {
 
   #contact a {
     padding-left: 1.5rem;
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -596,7 +606,7 @@ footer p {
 }
 
 #project-page-title h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
@@ -624,7 +634,7 @@ footer p {
 }
 
 #all-projects .project .text .title {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: black;
@@ -633,7 +643,7 @@ footer p {
 }
 
 #all-projects .project .text .text {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: black;
@@ -693,7 +703,7 @@ footer p {
   }
 
   #all-projects .project .text .title {
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 26px;
     font-weight: 600;
     color: black;
@@ -703,7 +713,7 @@ footer p {
   }
 
   #all-projects .project .text .text {
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: black;
@@ -723,7 +733,7 @@ footer p {
 }
 
 #project-page-title h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
@@ -732,7 +742,7 @@ footer p {
 }
 
 #project-page-title h1 span {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: black;
@@ -757,12 +767,13 @@ footer p {
 }
 
 #firstMotion .project .background-image {
-  width: 25rem;
+  width: 100%;
+  max-width: 400px;
   height: 15rem;
 }
 
 #firstMotion .project .text .title {
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: black;
@@ -771,8 +782,8 @@ footer p {
 }
 
 #firstMotion .project .text .text {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-family: "AlteGrotesk", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   color: black;
   line-height: normal;
@@ -827,7 +838,7 @@ footer p {
   }
 
   #firstMotion .project .text .title {
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 26px;
     font-weight: 600;
     color: black;
@@ -837,7 +848,7 @@ footer p {
   }
 
   #firstMotion .project .text .text {
-    font-family: "Raleway", sans-serif;
+    font-family: "AlteGrotesk", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: black;
