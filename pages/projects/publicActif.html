@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/images/iconWebsite.jpg" />
     <script src="/js/handleMenu.js" defer></script>
     <title>Tom Wainberg - Public Actif</title>
+    <script defer src="/js/iframeResize.js"></script>
 </head>
 <body>
     <header>
         <nav>
+            <a href="/index.html">accueil</a>
             <a href="/index.html#about">à propos</a>
             <a href="/index.html#projects">projets</a>
             <a href="/index.html#photos">photos</a>
@@ -21,6 +24,7 @@
 
     <section id="menu">
         <nav>
+            <a href="/index.html" onclick="handleMenu()">accueil</a>
             <a href="/index.html#about" onclick="handleMenu()">à propos</a>
             <a href="/index.html#projects" onclick="handleMenu()">projets</a>
             <a href="/index.html#photos" onclick="handleMenu()">photos</a>
@@ -64,7 +68,15 @@
             </div>
         </div>
 
-        <a class="backToHome" href="/index.html">retour à l'accueil</a>
+        <div class="video">
+            <p>La théorie du Public Actif de Gabriel Tarde :</p>
+            <iframe class="videoProject" width="80%" src="https://www.behance.net/embed/project/186630391?ilo0=1"  allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <div class="boutons-back">
+            <a class="backToHome" href="/index.html">retour à l'accueil</a>
+            <a class="backToHome" href="/pages/projects.html">retour aux projets</a>
+        </div>
 
     </section>
 

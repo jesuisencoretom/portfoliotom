@@ -873,4 +873,32 @@ footer p {
   }
 }
 
+.video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.video p {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.boutons-back {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-btn-to-website {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.big-btn-to-website img {
+  margin-left: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
