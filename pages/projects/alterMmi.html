@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/images/iconWebsite.jpg" />
+    <script src="/js/handleMenu.js" defer></script>
+    <title>Tom Wainberg - Alter'MMI</title>
+    <script defer src="/js/iframeResize.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">accueil</a>
+            <a href="/index.html#about">à propos</a>
+            <a href="/index.html#projects">projets</a>
+            <a href="/index.html#photos">photos</a>
+            <a href="/index.html#contact">me contacter</a>
+            <button onclick="handleMenu()">menu</button>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <nav>
+            <a href="/index.html" onclick="handleMenu()">accueil</a>
+            <a href="/index.html#about" onclick="handleMenu()">à propos</a>
+            <a href="/index.html#projects" onclick="handleMenu()">projets</a>
+            <a href="/index.html#photos" onclick="handleMenu()">photos</a>
+            <a href="/index.html#contact" onclick="handleMenu()">me contacter</a>
+            <button onclick="handleMenu()">close</button>
+        </nav>
+    </section>
+
+    <section id="project-page-title">
+        <h1><span>(05) </span>Alter'MMI</h1>
+        <p>
+            L'objectif était de réaliser une courte vidéo pour présenter l'alternance de <a href="https://matthieumarchand.netlify.app/" target="_blank">Matthieu Marchand</a>. Il fallait expliquer en quoi consistait le développement back-end. Étant donné la complexité du sujet, j'ai décidé  de réaliser une vidéo d'animation pour rendre le sujet plus accessible.
+            
+        </p>
+       
+        <p>
+            Ce projet a été réalisé dans un cadre hors-scolaire (février 2024).
+        </p>
+    </section>
+
+    <section id="firstMotion">
+
+        <div class="project">
+            <div class="background-image" style="background-image: url(/images/projets/altermmi-1.webp);background-size: cover;"></div>
+            <div class="text">
+                <p class="text">J'ai choisi de reprendre l'identité graphique de Windows 95. J'ai donc repensé et recréé l'entièreté des illustrations utilisées dans la vidéos (hors icônes). Ce processus a été particulièrement chronophage compte tenudu niveau de détail de chaque élément.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="background-image" style="background-image: url(/images/projets/altermmi-2.webp);;background-size: contain;"></div>
+            <div class="text">
+                <p class="text"> En utilisant Illustrator, j'ai pu les importer puis les dissocier sur After Effects afin d'animer individuellement chaque calque, pour ajouter des détails et de la fluidité. J'ai ensuite ajouté des bruitages et des sous-titres en utilisant Premier Pro. J'ai créé un court jingle de démarrage et d'arrêt dans le style des systèmes d'exploitations de l'époque.</p>
+            </div>
+        </div>
+
+
+
+        <div class="video">
+            <p>Présentation du développement back-end :</p>
+            <iframe class="videoProject" width="80%" src="https://www.behance.net/gallery/194005239/AlterMMI"  allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <div class="boutons-back">
+            <a class="backToHome" href="/index.html">retour à l'accueil</a>
+            <a class="backToHome" href="/pages/projects.html">retour aux projets</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Tom WAINBERG, 2024</p>
+    </footer>
+</body>
+</html>
