@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-VariableFont_wght.ttf");
+  font-family: "AlteGrotesk";
+  src: url("/fonts/AlteGrotesk-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -80,11 +80,12 @@ html *,
   font-family: "AlteGrotesk", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: black;
   line-height: normal;
   scroll-behavior: smooth;
 }
-
+a:link, a:visited, a:hover, a:active {
+  color: black;
+}
 section {
   position: relative;
   margin: 0 10vw 0 10vw;
@@ -111,7 +112,7 @@ section {
 }
 
 h2 {
-  font-family: "AlteGroteskBold", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 48px;
   font-weight: 500;
   color: black;
@@ -346,7 +347,6 @@ footer p {
   max-width: 30rem;
 }
 
-
 #projects,
 #photos {
   display: flex;
@@ -364,9 +364,6 @@ footer p {
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
-}
-#projects {
-  margin-bottom: 10rem;
 }
 
 #photos {
@@ -389,30 +386,36 @@ footer p {
 
 #projects .card,
 #photos .card {
+  transition: all 0.4s ease-in-out;
   position: relative;
+  display: flex;
+  align-items: end;
   flex-grow: 1;
+  color: white;
+  text-decoration: none;
   border-radius: 2rem;
   overflow: hidden;
   filter: grayscale(100%);
 }
 
-#projects .card p,
-#photos .card p {
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: white;
-  padding: 0 2rem 1rem 1rem;
+.infos {
+  padding: 0.5rem;
+  z-index: 2;
 }
 
 #projects .card p span,
 #photos .card p span {
-  font-family: "AlteGrotesk", sans-serif;
   font-size: 24px;
-  font-weight: 700;
-  color: white;
-  line-height: normal;
+  font-family: "AlteGrotesk", sans-serif;
+  font-weight: 600;
+}
+
+.competence {
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid white;
 }
 
 #projects .card:first-child,
@@ -430,13 +433,15 @@ footer p {
   height: 30%;
   background: black;
   transform: translateY(100%);
-  
 }
-
 
 #projects .card:hover::after,
 #photos .card:hover::after {
   transform: translateY(0%);
+}
+#projects .card:hover,
+#photos .card:hover{
+  filter: grayscale(0%);
 }
 
 #card-theories {
@@ -519,9 +524,9 @@ footer p {
 
 #contact a span {
   margin-right: 3rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 96px;
-  font-weight: 2;
+  font-weight: 100;
   color: black;
   line-height: normal;
 }
@@ -612,7 +617,7 @@ footer p {
 }
 
 #project-page-title h1 {
-  font-family: "AlteGroteskBold", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
@@ -640,7 +645,7 @@ footer p {
 }
 
 #all-projects .project .text .title {
-  font-family: "AlteGroteskBold", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: black;
@@ -739,7 +744,7 @@ footer p {
 }
 
 #project-page-title h1 {
-  font-family: "AlteGroteskBold", sans-serif;
+  font-family: "AlteGrotesk", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: black;
@@ -871,34 +876,6 @@ footer p {
   #firstMotion .project .background-image {
     height: 16rem;
   }
-}
-
-.video {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 4rem;
-}
-
-.video p {
-  font-size: 32px;
-  margin-bottom: 2rem;
-}
-
-.boutons-back {
-  display: flex;
-  justify-content: space-between;
-}
-
-.big-btn-to-website {
-  text-align: center;
-  font-size: 32px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.big-btn-to-website img {
-  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

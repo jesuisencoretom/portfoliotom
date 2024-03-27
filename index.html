@@ -111,25 +111,44 @@
 
         <div class="container">
             <a href="/pages/projects/escapadesTemporelles.html" class="card background-image" id="card-escapades">
-                <!-- image du projet(url) & lien vers la page(href) -->
-                <p>(02) <span>Escapades Temporelles</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <!-- image du projet(url) & lien vers la page(href) -->
+                    <p class="title">(02) <span>Escapades Temporelles</span></p> <!-- Titre du projet -->
+                    <span>
+                        <p class="competence">photographie</p>
+                    </span>
+                </div>
             </a>
 
             <a href="/pages/projects/publicActif.html" class="card background-image" id="card-theories">
-                <!-- image du projet(url) & lien vers la page(href) -->
-                <p>(01) <span>Théories animées</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <!-- image du projet(url) & lien vers la page(href) -->
+                    <p class="title">(01) <span>Théories animées</span></p> <!-- Titre du projet -->
+                    <span>
+                        <p class="competence">motion design</p>
+                    </span>
+                </div>
             </a>
         </div>
-
         <div class="container">
             <a href="/pages/projects/beFake.html" class="card background-image" id="card-befake">
-                <!-- image du projet(url) & lien vers la page(href) -->
-                <p>(03) <span>BeFake.</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <!-- image du projet(url) & lien vers la page(href) -->
+                    <p class="title">(03) <span>BeFake.</span></p> <!-- Titre du projet -->
+                    <span>
+                        <p class="competence">application web</p>
+                    </span>
+                </div>
             </a>
 
             <a href="/pages/projects/refonteMusba.html" class="card background-image" id="card-musba">
-                <!-- image du projet(url) & lien vers la page(href) -->
-                <p>(04) <span>Refonte MusBa</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <!-- image du projet(url) & lien vers la page(href) -->
+                    <p class="title">(04) <span>Refonte Musba</span></p> <!-- Titre du projet -->
+                    <span>
+                        <p class="competence">site web</p>
+                    </span>
+                </div>
             </a>
         </div>
 
@@ -142,30 +161,32 @@
         <div class="container">
             <a href="https://www.behance.net/gallery/193965507/Bordeaux" target="_blank" class="card background-image"
                 style="background-image: url('/images/photos/miniature-bordeaux.webp');background-size: cover;">
-                <!-- image du projet(url) & lien vers la page(href) -->
-                <p>(02) <span>Bordeaux</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <p class="title">(02) <span>Bordeaux</span></p>
+                </div>
             </a>
 
             <a href="https://www.behance.net/gallery/193833567/Paris-13" target="_blank" class="card background-image"
                 style="background-image: url('/images/photos/miniature-paris.webp');background-size: cover;">
-                <!-- image du projet(url) & lien vers la page(href) -->
-
-                <p>(01) <span>Paris</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <p class="title">(01) <span>Paris</span></p>
+                </div>
             </a>
         </div>
 
         <div class="container">
             <a href="https://www.behance.net/gallery/193965621/Montagne" target="_blank" class="card background-image"
                 style="background-image: url('/images/photos/miniature-montagne.webp');background-size: cover;">
-                <!-- image du projet(url) & lien vers la page(href) -->
-
-                <p>(03) <span>Montagne</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <p class="title">(03) <span>Montagne</span></p>
+                </div>
             </a>
-            <a href="https://www.behance.net/gallery/193832437/Exploration-Urbaine" target="_blank" class="card background-image"
+            <a href="https://www.behance.net/gallery/193832437/Exploration-Urbaine" target="_blank"
+                class="card background-image"
                 style="background-image: url('/images/photos/miniature-urbex.webp');background-size: cover;">
-                <!-- image du projet(url) & lien vers la page(href) -->
-
-                <p>(04) <span>Explorations Urbaines</span></p> <!-- Titre du projet -->
+                <div class="infos">
+                    <p class="title">(04) <span>Explorations urbaines</span></p>
+                </div>
             </a>
         </div>
     </section>
@@ -185,6 +206,25 @@
     <footer>
         <p>&copy; Tom WAINBERG, 2024</p> <!-- possibilité de rajouter du contenu textuel -->
     </footer>
+    <script>
+        const infos = document.querySelectorAll(".card");
+        infos.forEach(info => {
+            info.addEventListener("mouseover", () => {
+                let competence = info.querySelector(".competence");
+                if (competence) {
+                    competence.style.backgroundColor = "white";
+                    competence.style.color = "black";
+                }
+            });
+            info.addEventListener("mouseout", () => {
+                let competence = info.querySelector(".competence");
+                if (competence) {
+                    competence.style.backgroundColor = "";
+                    competence.style.color = "";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
