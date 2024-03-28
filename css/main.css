@@ -365,6 +365,7 @@ footer p {
   width: fit-content;
   align-self: center;
 }
+
 #projects {
   margin-bottom: 10rem;
 }
@@ -387,6 +388,21 @@ footer p {
   flex-direction: row;
 }
 
+.span-project {
+  margin-bottom: 2rem;
+}
+
+.span-competence {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  margin: 0 0 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  z-index: 3;
+  bottom: 0;
+}
+
 #projects .card,
 #photos .card {
   position: relative;
@@ -394,6 +410,12 @@ footer p {
   border-radius: 2rem;
   overflow: hidden;
   filter: grayscale(100%);
+  transition: filter 0.4s;
+}
+
+#projects .card:hover,
+#photos .card:hover {
+  filter: grayscale(0%);
 }
 
 #projects .card p,
@@ -430,7 +452,7 @@ footer p {
   height: 30%;
   background: black;
   transform: translateY(100%);
-  
+
 }
 
 
