@@ -21,13 +21,11 @@
     <link rel="canonical" href="https://tomwainberg.fr" />
 
     <meta name="subject" content="undefined">
-    <meta name="description"
-        content="Portfolio d'un créatif." />
+    <meta name="description" content="Portfolio d'un créatif." />
 
     <meta property="og:title" content="Test1" />
     <meta property="og:type" content="website" />
-    <meta property="og:description"
-        content="Portfolio d'un créatif." />
+    <meta property="og:description" content="Portfolio d'un créatif." />
     <meta property="og:site_name" content="Tom Wainberg" />
     <meta property="og:url" content="https://tomwainberg.fr" />
     <meta property="og:locale" content="fr" />
@@ -35,8 +33,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://tomwainberg.fr">
     <meta name="twitter:title" content="Accueil - Tom Wainberg" />
-    <meta name="twitter:description"
-        content="Portfolio d'un créatif." />
+    <meta name="twitter:description" content="Portfolio d'un créatif." />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Accueil" />
@@ -183,15 +180,21 @@
         <ul>
             <!-- lien & titre modifiable -->
             <li><a href="https://www.linkedin.com/in/tom-wainberg" target="_blank"><span>+</span>mon LinkedIn<img
-                        src="images/call-click-file.svg"></a></li> <!-- lien & titre modifiable -->
-                        <li><a href="https://www.behance.net/tomwainberg" target="_blank"><span>+</span>mon Behance<img
-                            src="images/call-click-file.svg"></a></li> <!-- lien & titre modifiable -->
+                        src="images/call-click-file.svg" alt="linkedin icon"></a></li> <!-- lien & titre modifiable -->
+            <li><a href="https://www.behance.net/tomwainberg" target="_blank"><span>+</span>mon Behance<img
+                        src="images/call-click-file.svg" alt="behance icon"></a></li> <!-- lien & titre modifiable -->
             <li><a href="images/WAINBERG_Tom_CV.pdf" target="_blank"><span>+</span>mon joli CV<img
-                        src="images/call-click-file.svg"></a></li> <!-- lien & titre modifiable -->
+                        src="images/call-click-file.svg" alt="ouvrir en nouvel onglet"></a></li>
+            <!-- lien & titre modifiable -->
         </ul>
     </section>
     <footer>
-        <p>&copy; Tom WAINBERG, 2024</p> <!-- possibilité de rajouter du contenu textuel -->
+        <p>&copy; Tom Wainberg, <span id="year"></span></p>
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById('year').textContent = year;
+        </script>
+        <!-- possibilité de rajouter du contenu textuel -->
     </footer>
     <script>
         const infos = document.querySelectorAll(".card");

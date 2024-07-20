@@ -57,6 +57,7 @@ header nav a,
 }
 
 body::-webkit-scrollbar {
+  background: repeat url(../images/noise_background.png);
   width: 1rem;
 }
 
@@ -83,6 +84,10 @@ html *,
   color: black;
   line-height: normal;
   scroll-behavior: smooth;
+}
+
+body {
+  background: repeat url(../images/noise_background.png);
 }
 
 section {
