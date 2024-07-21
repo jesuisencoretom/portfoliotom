@@ -57,7 +57,7 @@ header nav a,
 }
 
 body::-webkit-scrollbar {
-  background: repeat url(../images/noise_background.png);
+  background: repeat url(../images/noise_background_2.png);
   width: 1rem;
 }
 
