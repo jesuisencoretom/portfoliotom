@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/images/iconWebsite.png" />
+    <script src="/js/handleMenu.js" defer></script>
+    <title>Tom Wainberg - Ébullition</title>
+    <script defer src="/js/iframeResize.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">accueil</a>
+            <a href="/index.html#about">à propos</a>
+            <a href="/index.html#projects">projets</a>
+            <a href="/index.html#photos">photos</a>
+            <a href="/index.html#contact">me contacter</a>
+            <button onclick="handleMenu()">menu</button>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <nav>
+            <a href="/index.html" onclick="handleMenu()">accueil</a>
+            <a href="/index.html#about" onclick="handleMenu()">à propos</a>
+            <a href="/index.html#projects" onclick="handleMenu()">projets</a>
+            <a href="/index.html#photos" onclick="handleMenu()">photos</a>
+            <a href="/index.html#contact" onclick="handleMenu()">me contacter</a>
+            <button onclick="handleMenu()">close</button>
+        </nav>
+    </section>
+
+    <section id="project-page-title">
+        <h1><span>(07) </span>L'Ordre</h1>
+        <p>
+            Nous avons écrit, tourné puis monté l’épisode pilote d’une émission culturelle. Le résultat ? Ébullition, avec comme premier sujet la fatalité (supposée) de l’ennui !            
+        </p>
+       
+        <p>
+            Tout cela a été réalisé dans un délai de 8 jours, dans le cadre de la formation MMI (mars 2024).
+        </p>
+    </section>
+
+    <section id="firstMotion">
+
+        <div class="project">
+            <div class="background-image" style="background-image: url(/images/projets/ebullition-1.webp);background-size: cover;"></div>
+            <div class="text">
+                <p class="text">Notre objectif était de créer du contenu permettant de stimuler la réflexion et l'introspection auprès d’un public jeune. À travers une approche de vulgarisation, nous abordons des concepts qui, bien qu’abstraits au premier abord, sont omniprésents et occupent une place importante dans notre quotidien.
+                </p>
+            </div>
+        </div>
+
+                <div class="project">
+            <div class="background-image" style="background-image: url(/images/projets/ebullition-2.webp);background-size: cover;"></div>
+            <div class="text">
+                <p class="text">L’ennui, bien que souvent considéré comme inconfortable, peut s’avérer être un catalyseur essentiel pour la créativité. Plutôt que de le combattre sans relâche, nous avons décidé de l’étudier pour le comprendre, et mieux vivre avec.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="background-image" style="background-image: url(/images/projets/ebullition-3.webp);;background-size: contain;"></div>
+            <div class="text">
+                <p class="text">J'ai été réalisateur, co-auteur et co-monteur de ce premier épisode, et je suis très fier du résultat. Le passage du texte à l'image est généralement le plus délicat, et malgré un délai de production assez court, nous avons réussi à produire un contenu qui nous plaisait tous.
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="video">
+            <p>Ébullition - L'ennui est-il une fatalité ? :</p>
+            <iframe class="videoProject" width="80%" src="https://www.youtube.com/embed/I9My_hI-t4w?si=nkNOg7LEX996ejeU" title="L'Ennui" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 10px"></iframe>
+        </div>
+
+        <div class="boutons-back">
+            <a class="backToHome" href="/index.html">retour à l'accueil</a>
+            <a class="backToHome" href="/pages/projects.html">tous mes projets</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Tom WAINBERG, 2024</p>
+    </footer>
+</body>
+</html>
