@@ -406,8 +406,9 @@ footer p {
   border-radius: 100px;
   z-index: 3;
   bottom: 0;
-  transition:  0.4s;
+  transition: 0.4s;
 }
+
 .span-competence-projects {
   position: absolute;
   color: rgb(255, 255, 255);
@@ -417,7 +418,7 @@ footer p {
   border-radius: 100px;
   z-index: 3;
   bottom: 0;
-  transition:  0.4s;
+  transition: 0.4s;
 }
 
 #projects .card,
@@ -938,6 +939,20 @@ footer p {
 
 .big-btn-to-website img {
   margin-left: 1rem;
+}
+
+#legals {
+  margin-bottom: 10rem;
+  max-width: 800px;
+}
+
+#legals h1 {
+  margin-bottom: 4rem;
+}
+
+#legals h2 {
+  margin: 2rem 0 1rem 0;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/handleMenu.js" defer></script>
     <link rel="icon" href="/images/iconWebsite.png" />
     <title>Tom Wainberg - BeFake</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -35,9 +38,12 @@
     <section id="project-page-title">
         <h1><span>(dev web) </span>BeFake.</h1>
         <p>
-            Avec <a href="https://simondaguetkargl.fr/" target="_blank">Simon Daguet--Kargl</a>, nous avions pour objectif de créer un site web en utilisant Ruby on Rails et la technologie de génération d’images MidJourney. Pour jouer sur le contraste entre des images générées en quelques secondes et l’authenticité prônée par BeReal, nous avons imaginé BeFake.
+            Avec <a href="https://simondaguetkargl.fr/" target="_blank">Simon Daguet--Kargl</a>, nous avions pour
+            objectif de créer un site web en utilisant Ruby on Rails et la technologie de génération d’images
+            MidJourney. Pour jouer sur le contraste entre des images générées en quelques secondes et l’authenticité
+            prônée par BeReal, nous avons imaginé BeFake.
         </p>
-       
+
         <p>
             Tout cela a été réalisé dans un délai de 4 jours, dans le cadre de la formation MMI (février 2023).</p>
     </section>
@@ -45,27 +51,40 @@
     <section id="firstMotion">
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/befake-1.webp);background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/befake-1.webp);background-size: contain;"></div>
             <div class="text">
-                <p class="text">La première étape a été de repenser l’interface utilisateur de BeReal pour qu’elle fonctionne sur tout type d’écran, et pas uniquement sur mobile comme l’application originale. Cela impliquait de réadapter le design et l’ergonomie tout en respectant l’identité visuelle de base.</p>
+                <p class="text">La première étape a été de repenser l’interface utilisateur de BeReal pour qu’elle
+                    fonctionne sur tout type d’écran, et pas uniquement sur mobile comme l’application originale. Cela
+                    impliquait de réadapter le design et l’ergonomie tout en respectant l’identité visuelle de base.</p>
             </div>
         </div>
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/befake-2.webp);;background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/befake-2.webp);;background-size: contain;"></div>
             <div class="text">
-                <p class="text">Nous avons ensuite intégré les fonctionnalités principales : importer deux images (caméras avant et arrière), personnaliser son pseudo, rédiger une courte description et indiquer une localisation. Ces outils permettent de recréer l’expérience BeReal tout en jouant sur l’idée de fausse authenticité qui donne son identité au site.</p>
+                <p class="text">Nous avons ensuite intégré les fonctionnalités principales : importer deux images
+                    (caméras avant et arrière), personnaliser son pseudo, rédiger une courte description et indiquer une
+                    localisation. Ces outils permettent de recréer l’expérience BeReal tout en jouant sur l’idée de
+                    fausse authenticité qui donne son identité au site.</p>
             </div>
         </div>
 
         <section id="project-page-title">
             <p>
-                BeFake nous permet d'un côté de remettre en question la tendance d’un internet toujours plus proche des utilisateurs, et de l’autre, paradoxalement, de critiquer le développement alarmant de technologies altérant la réalité d’une manière quasiment imperceptible.   </p>
-               <br> 
-         <p>Le site est en libre accès en suivant le lien. Vous pouvez y consulter les publications existantes, poster vos propres créations, et modifier ou supprimer du contenu. Afin de rendre le site accueillant, merci de ne pas publier de contenu offensant et de ne pas supprimer ou modifier des BeFake ne vous appartenant pas.            </p>
+                BeFake nous permet d'un côté de remettre en question la tendance d’un internet toujours plus proche des
+                utilisateurs, et de l’autre, paradoxalement, de critiquer le développement alarmant de technologies
+                altérant la réalité d’une manière quasiment imperceptible. </p>
+            <br>
+            <p>Le site est en libre accès en suivant le lien. Vous pouvez y consulter les publications existantes,
+                poster vos propres créations, et modifier ou supprimer du contenu. Afin de rendre le site accueillant,
+                merci de ne pas publier de contenu offensant et de ne pas supprimer ou modifier des BeFake ne vous
+                appartenant pas. </p>
         </section>
-            
-        <a class="big-btn-to-website" href="https://befake.osc-fr1.scalingo.io/befakeposts" target="_blank">Accéder à BeFake<img src="/images/call-click-file.svg"></a>
+
+        <a class="big-btn-to-website" href="https://befake.osc-fr1.scalingo.io/befakeposts" target="_blank">Accéder à
+            BeFake<img src="/images/call-click-file.svg"></a>
 
 
         <div class="boutons-back">
@@ -76,7 +95,11 @@
     </section>
 
     <footer>
-        <p>&copy; Tom WAINBERG, 2024</p>
+        <p>&copy; Tom WAINBERG, <span id="date">2025</span> - <a href="/pages/legals.html">Mentions légales</a></p>
     </footer>
+    <script>
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

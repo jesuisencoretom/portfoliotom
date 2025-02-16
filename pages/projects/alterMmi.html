@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="/images/iconWebsite.png" />
@@ -10,6 +12,7 @@
     <title>Tom Wainberg - Alter'MMI</title>
     <script defer src="/js/iframeResize.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -36,10 +39,13 @@
     <section id="project-page-title">
         <h1><span>(motion) </span>Alter'MMI</h1>
         <p>
-            L'objectif de ce projet était de concevoir une courte vidéo d'animation pour présenter l'alternance de <a href="https://matthieumarchand.netlify.app/" target="_blank">Matthieu Marchand</a> et expliquer les bases du développement back-end. Face à la complexité du sujet, j'ai opté pour un format animé, pensé pour vulgariser et rendre accessible un domaine parfois intimidant.
+            L'objectif de ce projet était de concevoir une courte vidéo d'animation pour présenter l'alternance de <a
+                href="https://matthieumarchand.netlify.app/" target="_blank">Matthieu Marchand</a> et expliquer les
+            bases du développement back-end. Face à la complexité du sujet, j'ai opté pour un format animé, pensé pour
+            vulgariser et rendre accessible un domaine parfois intimidant.
 
         </p>
-       
+
         <p>
             Ce projet a été réalisé dans un cadre hors-scolaire (février 2024).
         </p>
@@ -48,33 +54,47 @@
     <section id="firstMotion">
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/altermmi-1.webp);background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/altermmi-1.webp);background-size: contain;"></div>
             <div class="text">
-                <p class="text">Pour donner à cette animation une touche originale, j'ai choisi de m'inspirer de l'identité visuelle de Windows 95. J'ai repensé et recréé toutes les illustrations (hors icônes d'origine), un travail minutieux et particulièrement chronophage. Chaque détail, des barres d'outils aux fenêtres contextuelles, a été reproduit en vectoriel sur Illustrator.
+                <p class="text">Pour donner à cette animation une touche originale, j'ai choisi de m'inspirer de
+                    l'identité visuelle de Windows 95. J'ai repensé et recréé toutes les illustrations (hors icônes
+                    d'origine), un travail minutieux et particulièrement chronophage. Chaque détail, des barres d'outils
+                    aux fenêtres contextuelles, a été reproduit en vectoriel sur Illustrator.
                 </p>
             </div>
         </div>
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/altermmi-2.webp);;background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/altermmi-2.webp);;background-size: contain;"></div>
             <div class="text">
-                <p class="text">À partir des visuels, j'ai importé chaque élément dans After Effects pour les animer individuellement. Cette dissociation m’a permis d’ajouter fluidité et précision à chaque mouvement. Les bruitages, créés pour coller à l’ambiance des systèmes d’exploitation d’époque, ont été intégrés sur Premiere Pro, où j'ai également ajouté des sous-titres et conçu un court jingle imitant les sons de démarrage et d'arrêt iconiques de l’époque.
+                <p class="text">À partir des visuels, j'ai importé chaque élément dans After Effects pour les animer
+                    individuellement. Cette dissociation m’a permis d’ajouter fluidité et précision à chaque mouvement.
+                    Les bruitages, créés pour coller à l’ambiance des systèmes d’exploitation d’époque, ont été intégrés
+                    sur Premiere Pro, où j'ai également ajouté des sous-titres et conçu un court jingle imitant les sons
+                    de démarrage et d'arrêt iconiques de l’époque.
                 </p>
             </div>
         </div>
 
         <section id="project-page-title">
             <p>
-                Ce projet m'a permis d'explorer une direction artistique originale et de perfectionner mes compétences en animation. Revisiter l'esthétique rétro tout en rendant un sujet technique accessible a été un défi stimulant, et le résultat final est moins austère qu'un simple Powerpoint (du moins j'espère).
-</p>
-               
+                Ce projet m'a permis d'explorer une direction artistique originale et de perfectionner mes compétences
+                en animation. Revisiter l'esthétique rétro tout en rendant un sujet technique accessible a été un défi
+                stimulant, et le résultat final est moins austère qu'un simple Powerpoint (du moins j'espère).
+            </p>
+
         </section>
 
 
 
         <div class="video">
             <p>Présentation du développement back-end :</p>
-            <iframe class="videoProject" width="80%" src="https://www.youtube.com/embed/vQEaPqHqpFc?si=W0tI90T0Bhi0qsy_" title="Vidéo Alter'MMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 10px"></iframe>
+            <iframe class="videoProject" width="80%" src="https://www.youtube.com/embed/vQEaPqHqpFc?si=W0tI90T0Bhi0qsy_"
+                title="Vidéo Alter'MMI" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 10px"></iframe>
         </div>
 
         <div class="boutons-back">
@@ -85,7 +105,11 @@
     </section>
 
     <footer>
-        <p>&copy; Tom WAINBERG, 2024</p>
+        <p>&copy; Tom WAINBERG, <span id="date">2025</span> - <a href="/pages/legals.html">Mentions légales</a></p>
     </footer>
+    <script>
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

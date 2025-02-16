@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/handleMenu.js" defer></script>
     <link rel="icon" href="/images/iconWebsite.png" />
     <title>Tom Wainberg - Refonte MusBA</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -35,46 +38,59 @@
     <section id="project-page-title">
         <h1><span>(dev web) </span>Refonte MusBA</h1>
         <p>
-            Nous avions pour mission de repenser graphiquement le site web du Musée des Beaux-Arts de Bordeaux (MusBA). L’objectif : moderniser l’identité visuelle, renforcer l’accessibilité pour tous les utilisateurs et optimiser le référencement naturel (SEO).
+            Nous avions pour mission de repenser graphiquement le site web du Musée des Beaux-Arts de Bordeaux (MusBA).
+            L’objectif : moderniser l’identité visuelle, renforcer l’accessibilité pour tous les utilisateurs et
+            optimiser le référencement naturel (SEO).
         </p>
-       
+
         <p>
-            Tout cela a été réalisé dans un délai de 8 jours, dans le cadre de la formation MMI (octobre 2023).        </p>
+            Tout cela a été réalisé dans un délai de 8 jours, dans le cadre de la formation MMI (octobre 2023). </p>
     </section>
 
     <section id="firstMotion">
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/musba-1.webp);background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/musba-1.webp);background-size: contain;"></div>
             <div class="text">
                 <p class="text">
-                    La première étape consistait à revoir le design du site. Nous avons imaginé une nouvelle identité visuelle, plus moderne et en adéquation avec la richesse culturelle du musée. L’expérience utilisateur a été au cœur de nos choix, avec une attention particulière portée à l’accessibilité pour garantir un site inclusif et intuitif.
+                    La première étape consistait à revoir le design du site. Nous avons imaginé une nouvelle identité
+                    visuelle, plus moderne et en adéquation avec la richesse culturelle du musée. L’expérience
+                    utilisateur a été au cœur de nos choix, avec une attention particulière portée à l’accessibilité
+                    pour garantir un site inclusif et intuitif.
 
-                    </p>
+                </p>
             </div>
         </div>
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/musba-2.webp);;background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/musba-2.webp);;background-size: contain;"></div>
             <div class="text">
-                <p class="text">Une fois le design validé, nous avons consacré la deuxième semaine au développement. Notre concept a pris forme avec la création de deux pages web entièrement fonctionnelles et responsives. En parallèle, nous avons optimisé le référencement naturel pour améliorer la visibilité en ligne, en nous basant sur les meilleures pratiques SEO.</p>
+                <p class="text">Une fois le design validé, nous avons consacré la deuxième semaine au développement.
+                    Notre concept a pris forme avec la création de deux pages web entièrement fonctionnelles et
+                    responsives. En parallèle, nous avons optimisé le référencement naturel pour améliorer la visibilité
+                    en ligne, en nous basant sur les meilleures pratiques SEO.</p>
             </div>
         </div>
 
         <section id="project-page-title">
             <p>
-                Ce projet nous a permis d'allier design et développement technique. Le résultat : une refonte qui reflète mieux l’identité du MusBA et propose une navigation en ligne fluide, accessible et moderne. Vous pouvez y accéder avec le lien ci-dessous. 
-</p>
-               <br> 
-         <p>Réalisé avec 
-            <a href="https://www.linkedin.com/in/thomas-riq/" target="_blank">Thomas Riquier</a>, 
-            <a href="https://fr.linkedin.com/in/alexis-juhel16" target="_blank">Alexis Juhel</a>, 
-            <a href="https://fr.linkedin.com/in/antoine-courcaud" target="_blank">Antoine Courcaud</a> et
-            <a href="https://fr.linkedin.com/in/esthebann-volle-750924294" target="_blank">Estheban Volle</a>.
- 
+                Ce projet nous a permis d'allier design et développement technique. Le résultat : une refonte qui
+                reflète mieux l’identité du MusBA et propose une navigation en ligne fluide, accessible et moderne. Vous
+                pouvez y accéder avec le lien ci-dessous.
+            </p>
+            <br>
+            <p>Réalisé avec
+                <a href="https://www.linkedin.com/in/thomas-riq/" target="_blank">Thomas Riquier</a>,
+                <a href="https://fr.linkedin.com/in/alexis-juhel16" target="_blank">Alexis Juhel</a>,
+                <a href="https://fr.linkedin.com/in/antoine-courcaud" target="_blank">Antoine Courcaud</a> et
+                <a href="https://fr.linkedin.com/in/esthebann-volle-750924294" target="_blank">Estheban Volle</a>.
+
         </section>
 
-        <a class="big-btn-to-website" href="https://musba.netlify.app/" target="_blank">Accéder à la refonte<img src="/images/call-click-file.svg"></a>
+        <a class="big-btn-to-website" href="https://musba.netlify.app/" target="_blank">Accéder à la refonte<img
+                src="/images/call-click-file.svg"></a>
 
 
         <div class="boutons-back">
@@ -85,7 +101,11 @@
     </section>
 
     <footer>
-        <p>&copy; Tom WAINBERG, 2024</p>
+        <p>&copy; Tom WAINBERG, <span id="date">2025</span> - <a href="/pages/legals.html">Mentions légales</a></p>
     </footer>
+    <script>
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

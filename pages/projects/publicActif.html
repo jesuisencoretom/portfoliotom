@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="/images/iconWebsite.png" />
@@ -10,6 +12,7 @@
     <title>Tom Wainberg - Public Actif</title>
     <script defer src="/js/iframeResize.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -36,10 +39,13 @@
     <section id="project-page-title">
         <h1><span>(motion) </span>Public Actif</h1>
         <p>
-            En une minute, avec <a href="https://simondaguetkargl.fr/" target="_blank">Simon Daguet--Kargl</a>, nous avons vulgarisé la théorie du Public Actif de Gabriel Tarde à travers une animation en flat design mise en perspective. L’objectif était de rendre nos explications aussi attrayantes sur le fond qu’agréables à regarder.
-            
+            En une minute, avec <a href="https://simondaguetkargl.fr/" target="_blank">Simon Daguet--Kargl</a>, nous
+            avons vulgarisé la théorie du Public Actif de Gabriel Tarde à travers une animation en flat design mise en
+            perspective. L’objectif était de rendre nos explications aussi attrayantes sur le fond qu’agréables à
+            regarder.
+
         </p>
-       
+
         <p>
             Tout cela a été réalisé dans un délai de 4 jours, dans le cadre de la formation MMI (novembre 2023).
         </p>
@@ -48,29 +54,42 @@
     <section id="firstMotion">
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/public-actif-1.webp);background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/public-actif-1.webp);background-size: contain;"></div>
             <div class="text">
-                <p class="text">Nous avons commencé par écrire le scénario, une étape qui a nécessité plusieurs réécritures pour affiner la clarté et le rythme de la narration. Une fois le script finalisé, nous avons dessiné un storyboard assez simple pour poser les bases visuelles de l’animation, avant de le recréer et de le peaufiner sur ordinateur.</p>
+                <p class="text">Nous avons commencé par écrire le scénario, une étape qui a nécessité plusieurs
+                    réécritures pour affiner la clarté et le rythme de la narration. Une fois le script finalisé, nous
+                    avons dessiné un storyboard assez simple pour poser les bases visuelles de l’animation, avant de le
+                    recréer et de le peaufiner sur ordinateur.</p>
             </div>
         </div>
 
         <div class="project">
-            <div class="background-image" style="background-image: url(/images/projets/public-actif-2.webp);;background-size: contain;"></div>
+            <div class="background-image"
+                style="background-image: url(/images/projets/public-actif-2.webp);;background-size: contain;"></div>
             <div class="text">
-                <p class="text">Pour la production, nous avons utilisé Illustrator afin de concevoir les illustrations, After Effects pour leur donner vie grâce à l’animation, et Premiere Pro pour monter les différentes séquences. L’ajout des bruitages, enregistrés et retravaillés par nos soins, a permis d’ancrer notre univers sonore.</p>
+                <p class="text">Pour la production, nous avons utilisé Illustrator afin de concevoir les illustrations,
+                    After Effects pour leur donner vie grâce à l’animation, et Premiere Pro pour monter les différentes
+                    séquences. L’ajout des bruitages, enregistrés et retravaillés par nos soins, a permis d’ancrer notre
+                    univers sonore.</p>
             </div>
         </div>
 
         <section id="project-page-title">
             <p>
-                Cette animation marque mon tout premier projet en motion design et mes débuts sur After Effects. L’ajout d'une troisième dimension, fruit de quelques nuits écourtées, constitue une petite fierté, apportant une touche esthétique et renforçant la profondeur visuelle de l’ensemble.</p>
+                Cette animation marque mon tout premier projet en motion design et mes débuts sur After Effects. L’ajout
+                d'une troisième dimension, fruit de quelques nuits écourtées, constitue une petite fierté, apportant une
+                touche esthétique et renforçant la profondeur visuelle de l’ensemble.</p>
         </section>
 
 
 
         <div class="video">
             <p>La théorie du Public Actif de Gabriel Tarde :</p>
-            <iframe class="videoProject" width="80%" src="https://www.youtube.com/embed/6LYfe4mrv_s?si=trlw5mHfHdiTvPXb" title="Théorie du Public Actif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 10px"></iframe>
+            <iframe class="videoProject" width="80%" src="https://www.youtube.com/embed/6LYfe4mrv_s?si=trlw5mHfHdiTvPXb"
+                title="Théorie du Public Actif" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 10px"></iframe>
         </div>
 
         <div class="boutons-back">
@@ -81,7 +100,11 @@
     </section>
 
     <footer>
-        <p>&copy; Tom WAINBERG, 2024</p>
+        <p>&copy; Tom WAINBERG, <span id="date">2025</span> - <a href="/pages/legals.html">Mentions légales</a></p>
     </footer>
+    <script>
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
