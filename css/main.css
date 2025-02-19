@@ -421,19 +421,29 @@ footer p {
   transition: 0.4s;
 }
 
+.project {
+  object-fit: cover;
+}
+
+.project .background-image {
+  object-fit: cover;
+}
+
 #projects .card,
 #photos .card {
   position: relative;
   flex-grow: 1;
   border-radius: 2rem;
   overflow: hidden;
+  border: 2px solid white;
   filter: grayscale(90%);
-  transition: filter 0.4s;
+  transition: all 0.4s ease;
 }
 
 #projects .card:hover,
 #photos .card:hover {
   filter: grayscale(10%);
+  border: 2px solid black;
 }
 
 #projects .card p,
@@ -482,6 +492,7 @@ footer p {
 #card-theories {
   background-image: url("../images/miniatures/miniature-public-actif.webp");
   background-size: cover;
+  object-fit: cover;
 }
 
 #card-escapades {
@@ -677,6 +688,8 @@ footer p {
   width: 25rem;
   height: 15rem;
   border-radius: 2rem;
+  min-width: 40%;
+  max-width: 400px;
 }
 
 #all-projects .project .text .title {
