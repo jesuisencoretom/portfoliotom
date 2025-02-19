@@ -688,6 +688,29 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+#all-projects .project .project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#all-projects .project .project-content .project-labels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#all-projects .project .project-content .project-labels span {
+  font-family: "AlteGrotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  line-height: normal;
+  padding: 10px 15px;
+  border-radius: 9999px;
+}
+
 #all-projects .project .text .text {
   font-family: "AlteGrotesk", sans-serif;
   font-size: 20px;
