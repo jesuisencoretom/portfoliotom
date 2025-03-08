@@ -288,7 +288,8 @@ footer p {
 }
 
 #hero img {
-  height: 30rem;
+  height: 100%;
+  width: 100%;
 }
 
 .scrollCall {
@@ -992,3 +993,16 @@ footer p {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.portrait-container {
+  position: relative;
+  height: 30rem;
+  aspect-ratio: 370/480;
+  object-fit: cover;
+}
+
+.portrait-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -82,7 +82,11 @@
                 Étudiant de deuxième année en BUT Métiers du Multimédia et de l'Internet à l'IUT Bordeaux Montaigne.
             </p>
         </div>
-        <img src="images/PortraitTom.webp" alt="portrait">
+        <div class="portrait-container">
+            <img src="images/PortraitTomFond.webp" alt="">
+            <img id="parallax-img" src="images/PortraitTomPerso.webp" alt="">
+        </div>
+        <!--<img src="images/PortraitTom.webp" alt="portrait">-->
     </section>
     <a href="#about" class="scrollCall">
         <img src="images/arrow-scroll-call.svg" alt="flèche de l'appel à défilement">
@@ -109,32 +113,36 @@
         <h2>quelques projets</h2>
 
         <div class="container">
-            <a href="/pages/projects/escapadesTemporelles.html" class="card background-image" id="card-escapades">
+            <a href="/pages/projects/escapadesTemporelles.html" class="card background-image" id="card-escapades"
+                alt="Projet : Escapades Temporelles" title="Escapades Temporelles">
                 <!-- image du projet(url) & lien vers la page(href) -->
                 <!--<p class="span-project">(02) <span>Escapades Temporelles</span></p>  Titre du projet 
-                <span class="span-competence">écriture</span>-->
+                    <span class="span-competence">écriture</span>-->
             </a>
 
             <a href="/pages/projects/publicActif.html" class="card background-image" id="card-theories"
+                alt="Projet : Théories animée en motion design" title="Théories animées en motion design"
                 style="object-fit: cover;">
 
                 <!-- image du projet(url) & lien vers la page(href) 
-                <p class="span-project">(01) <span>Théories animées</span></p>  Titre du projet 
-                <span class="span-competence">motion design</span>  tag du projet -->
+                    <p class="span-project">(01) <span>Théories animées</span></p>  Titre du projet 
+                    <span class="span-competence">motion design</span>  tag du projet -->
             </a>
         </div>
 
         <div class="container">
-            <a href="/pages/projects/beFake.html" class="card background-image" id="card-befake">
+            <a href="/pages/projects/beFake.html" class="card background-image" id="card-befake" alt="Projet : BeFake"
+                title="BeFake">
                 <!-- image du projet(url) & lien vers la page(href) 
-                <p class="span-project">(03) <span>BeFake.</span></p>  Titre du projet 
-                <span class="span-competence">développement web</span> tag du projet -->
+                    <p class="span-project">(03) <span>BeFake.</span></p>  Titre du projet 
+                    <span class="span-competence">développement web</span> tag du projet -->
             </a>
 
-            <a href="/pages/projects/lordre.html" class="card background-image" id="card-ordre">
+            <a href="/pages/projects/lordre.html" class="card background-image" id="card-ordre" alt="Projet : L'Ordre"
+                title="L'Ordre">
                 <!-- image du projet(url) & lien vers la page(href) 
-                <p class="span-project">(04) <span>Refonte MusBa</span></p>  Titre du projet 
-                <span class="span-competence">développement web</span>  tag du projet -->
+                    <p class="span-project">(04) <span>Refonte MusBa</span></p>  Titre du projet 
+                    <span class="span-competence">développement web</span>  tag du projet -->
 
             </a>
         </div>
@@ -203,7 +211,7 @@
     <script>
         document.getElementById('date').innerHTML = new Date().getFullYear();
     </script>
-    <script>
+    <script defer>
         const infos = document.querySelectorAll(".card");
         infos.forEach(info => {
             info.addEventListener("mouseover", () => {
@@ -221,6 +229,16 @@
                 }
             });
         });
+
+        // Effet de parallaxe
+        const parallax = (e) => {
+            let x = e.clientX / window.innerWidth;
+            let y = e.clientY / window.innerHeight;
+
+            document.getElementById("parallax-img").style.transform = `translate(-${x * 1
+                }%, -${y * 1}%)`;
+        };
+        document.addEventListener("mousemove", parallax);
     </script>
 </body>
 
