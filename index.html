@@ -83,8 +83,7 @@
             </p>
         </div>
         <div class="portrait-container">
-            <img src="images/PortraitTomFond.webp" alt="">
-            <img id="parallax-img" src="images/PortraitTomPerso.webp" alt="">
+            <img id="parallax-img" src="images/PortraitTom.webp" alt="">
         </div>
         <!--<img src="images/PortraitTom.webp" alt="portrait">-->
     </section>
@@ -229,16 +228,6 @@
                 }
             });
         });
-
-        // Effet de parallaxe
-        const parallax = (e) => {
-            let x = e.clientX / window.innerWidth;
-            let y = e.clientY / window.innerHeight;
-
-            document.getElementById("parallax-img").style.transform = `translate(-${x * 1
-                }%, -${y * 1}%)`;
-        };
-        document.addEventListener("mousemove", parallax);
     </script>
 </body>
 
